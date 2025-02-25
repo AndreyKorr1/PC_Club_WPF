@@ -1,0 +1,36 @@
+﻿<Page x:Class="ComputerClub.Login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ComputerClub"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Login">
+
+    <Grid Background="white">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="397*"/>
+            <ColumnDefinition Width="403*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="61*"/>
+            <RowDefinition Height="52*"/>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="91*"/>
+            <RowDefinition Height="68*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Введите логин"></TextBlock>
+        <TextBlock Text="Введите пароль" Grid.Row="1"></TextBlock>
+        <TextBlock Text="Введите Номер телефона" Grid.Row="2"></TextBlock>
+        <TextBlock Text="Введите дату рождения" Grid.Row="3"></TextBlock>
+
+        <TextBox x:Name="loginText" Grid.Row="0" Grid.Column="1"></TextBox>
+        <TextBox x:Name="passwordText" Grid.Row="1" Grid.Column="1"></TextBox>
+        <TextBox x:Name="phoneText" Grid.Row="2" Grid.Column="1" ></TextBox>
+        <TextBox x:Name="dataText" Grid.Row="3" Grid.Column="1"></TextBox>
+        <Button Name="BtSignUp" Content="Регистрация" Click="signupButton_Click" Grid.Row="4"></Button>
+        <Button Name="BtSignIn" Content="Войти" Click="signInButton_Click" Grid.Row="4" Grid.Column="1"></Button>
+
+    </Grid>
+</Page>
