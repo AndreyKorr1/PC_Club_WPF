@@ -26,3 +26,5 @@ C:\Users\akory\source\repos\ComputerClub\ComputerClub\obj\Debug\PC.g.cs
 C:\Users\akory\source\repos\ComputerClub\ComputerClub\obj\Debug\PC.baml
 C:\Users\akory\source\repos\ComputerClub\ComputerClub\obj\Debug\AddPage.g.cs
 C:\Users\akory\source\repos\ComputerClub\ComputerClub\obj\Debug\AddPage.baml
+C:\Users\akory\source\repos\ComputerClub\ComputerClub\obj\Debug\Enter.g.cs
+C:\Users\akory\source\repos\ComputerClub\ComputerClub\obj\Debug\Login.g.cs

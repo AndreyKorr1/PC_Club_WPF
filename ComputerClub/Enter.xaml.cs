@@ -16,14 +16,23 @@ using System.Windows.Shapes;
 namespace ComputerClub
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Enter.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Enter : Page
     {
-        public MainWindow()
+        public Enter()
         {
             InitializeComponent();
-            MainFrame.Navigate(new Enter());
+        }
+
+        private void RegistrationClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Login());
+        }
+
+        private void EnterClick(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

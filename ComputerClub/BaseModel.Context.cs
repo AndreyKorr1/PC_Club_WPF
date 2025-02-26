@@ -21,7 +21,7 @@ namespace ComputerClub
         {
         }
 
-        public static PC_ClubEntities1 Getcontext()
+        public static PC_ClubEntities1 GetContext()
         {
             if (_context == null)
                 _context = new PC_ClubEntities1();

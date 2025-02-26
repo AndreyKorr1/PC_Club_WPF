@@ -29,8 +29,7 @@
         <TextBox x:Name="passwordText" Grid.Row="1" Grid.Column="1"></TextBox>
         <TextBox x:Name="phoneText" Grid.Row="2" Grid.Column="1" ></TextBox>
         <TextBox x:Name="dataText" Grid.Row="3" Grid.Column="1"></TextBox>
-        <Button Name="BtSignUp" Content="Регистрация" Click="signupButton_Click" Grid.Row="4"></Button>
-        <Button Name="BtSignIn" Content="Войти" Click="signInButton_Click" Grid.Row="4" Grid.Column="1"></Button>
+        <Button Name="BtSignUp" Content="Регистрация" Click="signupButton_Click" Grid.Row="4" Grid.ColumnSpan="2"></Button>
 
     </Grid>
 </Page>

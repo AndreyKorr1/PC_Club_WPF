@@ -23,7 +23,7 @@ namespace ComputerClub
         public PC()
         {
             InitializeComponent();
-            DGpc.ItemsSource = PC_ClubEntities.GetContext().Pcs.ToList();
+            DGpc.ItemsSource = PC_ClubEntities1.GetContext().Pc.ToList();
         }
 
         private void BtDel_Click(object sender, RoutedEventArgs e)

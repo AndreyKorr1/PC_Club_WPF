@@ -39,9 +39,9 @@ namespace ComputerClub
         {
             if (loginText.Text.Length > 0)
             {
-                using (var db = new Entities())
+                using (var db = new PC_ClubEntities1())
                 {
-                    var user = db.Users.AsNoTracking().FirstOrDefault(u => u.Login == loginText.Text);
+                    var user = db.Users.AsNoTracking().FirstOrDefault(u => u.FirstName == loginText.Text);
                     if (user != null)
                     {
                         MessageBox.Show("Пользователь с такими данными уже существует!");
@@ -64,7 +64,6 @@ namespace ComputerClub
                 if (!regex.IsMatch(phoneText.Text)) errors.AppendLine("Укажите номер телефона в формате +7XXXXXXXXXX");
                 if (en) errors.AppendLine("Пароль должен быть на английском языке");
                 if (!number) errors.AppendLine("Пароль должен содержать хотя бы одну цифру");
-                if (!isValidPhone(phone.Text)) errors.AppendLine("Введите корректный email");
 
                 if (errors.Length > 0)
                 {
@@ -73,14 +72,13 @@ namespace ComputerClub
                 }
                 else
                 {
-                    Entities db = new Entities();
+                    PC_ClubEntities1 db = new PC_ClubEntities1();
                     Users userObject = new Users
                     {
-                        Login = loginText.Text,
+                        FirstName = loginText.Text,
                         Password = GetHash(passwordText.Password),
-                        Role = 1,
-                        Data = dataText.Text,
-                        Phone = phoneText.Text
+                        DateOfBirth = dataText.Text,
+                        PhoneNumber = phoneText.Text
                     };
 
                     db.Users.Add(userObject);
@@ -90,40 +88,6 @@ namespace ComputerClub
                 }
             }
             else MessageBox.Show("Укажите логин!");
-        }
-        private void signInButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (string.IsNullOrEmpty(loginText.Text) || string.IsNullOrEmpty(passwordText.Password))
-            {
-                MessageBox.Show("Введите логин и пароль!");
-                return;
-            }
-
-            string _password = GetHash(passwordText.Password);
-
-            using (var db = new Entities())
-            {
-                var user = db.Users.AsNoTracking().FirstOrDefault(u => u.Login == loginText.Text && u.Password == _password);
-
-                if (user == null)
-                {
-                    MessageBox.Show("Пользователь с такими данными не найден!");
-                    return;
-                }
-
-                if (user.Role == 1)
-                {
-                    var newWindow = new UserWindow(user);
-                    newWindow.Show();
-                    MainWindow.closeWindow();  // Check the naming
-                }
-                else
-                {
-                    var newWindow = new AdminWindow(user);
-                    newWindow.Show();
-                    MainWindow.closeWindow(); // Check the naming
-                }
-            }
         }
 
     }

@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище PC_ClubModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Deliver">
+    <Key>
+      <PropertyRef Name="DeliverID" />
+    </Key>
+    <Property Name="DeliverID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ProviderID" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="ProductID" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="ProductQuantity" Type="numeric" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Discount">
+    <Key>
+      <PropertyRef Name="DiscountID" />
+    </Key>
+    <Property Name="DiscountID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="DiscountName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Procent" Type="numeric" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Pc">
+    <Key>
+      <PropertyRef Name="PcID" />
+    </Key>
+    <Property Name="PcID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Video_Card" Type="varchar" MaxLength="10" />
+    <Property Name="CPU" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ProductName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ProductPrice" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Provider">
+    <Key>
+      <PropertyRef Name="ProviderID" />
+    </Key>
+    <Property Name="ProviderID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="CompanyName" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Rate">
+    <Key>
+      <PropertyRef Name="RateID" />
+    </Key>
+    <Property Name="RateID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="RateName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="RatePrice" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Receipt">
+    <Key>
+      <PropertyRef Name="ReciptID" />
+    </Key>
+    <Property Name="ReciptID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="SessionID" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="ProductID" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="DiscountID" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="Sum" Type="numeric" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Reviews">
+    <Key>
+      <PropertyRef Name="ReviewID" />
+    </Key>
+    <Property Name="ReviewID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="UserID" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="Rating" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="Message" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Session">
+    <Key>
+      <PropertyRef Name="SessionID" />
+    </Key>
+    <Property Name="SessionID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="UserID" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="PcID" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="RateID" Type="numeric" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="20" />
+    <Property Name="DateOfBirth" Type="date" />
+  </EntityType>
+  <Association Name="FK_Deliver_Product">
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Deliver" Type="Self.Deliver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="Deliver">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Deliver_Provider">
+    <End Role="Provider" Type="Self.Provider" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Deliver" Type="Self.Deliver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Provider">
+        <PropertyRef Name="ProviderID" />
+      </Principal>
+      <Dependent Role="Deliver">
+        <PropertyRef Name="ProviderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Receipt_Discount">
+    <End Role="Discount" Type="Self.Discount" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Receipt" Type="Self.Receipt" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Discount">
+        <PropertyRef Name="DiscountID" />
+      </Principal>
+      <Dependent Role="Receipt">
+        <PropertyRef Name="DiscountID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Receipt_Product">
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Receipt" Type="Self.Receipt" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="Receipt">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Receipt_Session">
+    <End Role="Session" Type="Self.Session" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Receipt" Type="Self.Receipt" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Session">
+        <PropertyRef Name="SessionID" />
+      </Principal>
+      <Dependent Role="Receipt">
+        <PropertyRef Name="SessionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reviews_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Reviews" Type="Self.Reviews" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Reviews">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Session_Pc">
+    <End Role="Pc" Type="Self.Pc" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Session" Type="Self.Session" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pc">
+        <PropertyRef Name="PcID" />
+      </Principal>
+      <Dependent Role="Session">
+        <PropertyRef Name="PcID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Session_Rate">
+    <End Role="Rate" Type="Self.Rate" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Session" Type="Self.Session" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rate">
+        <PropertyRef Name="RateID" />
+      </Principal>
+      <Dependent Role="Session">
+        <PropertyRef Name="RateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Session_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Session" Type="Self.Session" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Session">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище PC_ClubModelContainer">
+    <EntitySet Name="Deliver" EntityType="Self.Deliver" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Discount" EntityType="Self.Discount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pc" EntityType="Self.Pc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Provider" EntityType="Self.Provider" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rate" EntityType="Self.Rate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Receipt" EntityType="Self.Receipt" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Reviews" EntityType="Self.Reviews" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Session" EntityType="Self.Session" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Deliver_Product" Association="Self.FK_Deliver_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="Deliver" EntitySet="Deliver" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Deliver_Provider" Association="Self.FK_Deliver_Provider">
+      <End Role="Provider" EntitySet="Provider" />
+      <End Role="Deliver" EntitySet="Deliver" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Receipt_Discount" Association="Self.FK_Receipt_Discount">
+      <End Role="Discount" EntitySet="Discount" />
+      <End Role="Receipt" EntitySet="Receipt" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Receipt_Product" Association="Self.FK_Receipt_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="Receipt" EntitySet="Receipt" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Receipt_Session" Association="Self.FK_Receipt_Session">
+      <End Role="Session" EntitySet="Session" />
+      <End Role="Receipt" EntitySet="Receipt" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reviews_Users" Association="Self.FK_Reviews_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Reviews" EntitySet="Reviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Session_Pc" Association="Self.FK_Session_Pc">
+      <End Role="Pc" EntitySet="Pc" />
+      <End Role="Session" EntitySet="Session" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Session_Rate" Association="Self.FK_Session_Rate">
+      <End Role="Rate" EntitySet="Rate" />
+      <End Role="Session" EntitySet="Session" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Session_Users" Association="Self.FK_Session_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Session" EntitySet="Session" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
