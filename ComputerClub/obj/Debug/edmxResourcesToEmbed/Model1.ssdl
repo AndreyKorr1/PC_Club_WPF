@@ -14,7 +14,7 @@
       <PropertyRef Name="DiscountID" />
     </Key>
     <Property Name="DiscountID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="DiscountName" Type="varchar" MaxLength="50" />
+    <Property Name="DiscountName" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Procent" Type="numeric" Precision="18" Scale="0" />
   </EntityType>
   <EntityType Name="Pc">
@@ -30,15 +30,15 @@
       <PropertyRef Name="ProductID" />
     </Key>
     <Property Name="ProductID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="ProductName" Type="varchar" MaxLength="20" />
-    <Property Name="ProductPrice" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="ProductName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ProductPrice" Type="numeric" Precision="18" Scale="0" Nullable="false" />
   </EntityType>
   <EntityType Name="Provider">
     <Key>
       <PropertyRef Name="ProviderID" />
     </Key>
     <Property Name="ProviderID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="CompanyName" Type="varchar" MaxLength="30" />
+    <Property Name="CompanyName" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="Email" Type="varchar" MaxLength="30" />
   </EntityType>
   <EntityType Name="Rate">
@@ -46,8 +46,8 @@
       <PropertyRef Name="RateID" />
     </Key>
     <Property Name="RateID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="RateName" Type="varchar" MaxLength="20" />
-    <Property Name="RatePrice" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="RateName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="RatePrice" Type="numeric" Precision="18" Scale="0" Nullable="false" />
   </EntityType>
   <EntityType Name="Receipt">
     <Key>
@@ -77,12 +77,23 @@
     <Property Name="PcID" Type="numeric" Precision="18" Scale="0" />
     <Property Name="RateID" Type="numeric" Precision="18" Scale="0" />
   </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
   <EntityType Name="Users">
     <Key>
       <PropertyRef Name="UserID" />
     </Key>
     <Property Name="UserID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="PhoneNumber" Type="varchar" MaxLength="20" />
     <Property Name="DateOfBirth" Type="date" />
   </EntityType>
@@ -222,6 +233,7 @@
     <EntitySet Name="Receipt" EntityType="Self.Receipt" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Reviews" EntityType="Self.Reviews" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Session" EntityType="Self.Session" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_Deliver_Product" Association="Self.FK_Deliver_Product">
       <End Role="Product" EntitySet="Product" />

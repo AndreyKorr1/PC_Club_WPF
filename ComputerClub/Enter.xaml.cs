@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -24,15 +25,36 @@ namespace ComputerClub
         {
             InitializeComponent();
         }
+        public static string GetHash(string password)
+        {
+            using (var hash = SHA1.Create())
+            {
+                return string.Concat(hash.ComputeHash(Encoding.UTF8.GetBytes(password)).Select(x => x.ToString("X2")));
+            }
+        }
+
+        private void EnterClick(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(LoginText.Text) || string.IsNullOrEmpty(PasswordText.Password))
+            {
+                MessageBox.Show("Введите логин и пароль!");
+                return;
+            }
+
+            string _password = GetHash(PasswordText.Password);
+            using (var db = new PC_ClubEntities4())
+            {
+                var user = db.Users.AsNoTracking().FirstOrDefault(u => u.FirstName == LoginText.Text && u.Password == _password);
+                if (user == null) { MessageBox.Show("Пользователь с такими данными не найден!"); return; }
+                NavigationService.Navigate(new Page1());
+            }
+        }
+
 
         private void RegistrationClick(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Login());
         }
 
-        private void EnterClick(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

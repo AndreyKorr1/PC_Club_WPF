@@ -26,9 +26,9 @@
         <TextBlock Text="Введите дату рождения" Grid.Row="3"></TextBlock>
 
         <TextBox x:Name="loginText" Grid.Row="0" Grid.Column="1"></TextBox>
-        <TextBox x:Name="passwordText" Grid.Row="1" Grid.Column="1"></TextBox>
-        <TextBox x:Name="phoneText" Grid.Row="2" Grid.Column="1" ></TextBox>
-        <TextBox x:Name="dataText" Grid.Row="3" Grid.Column="1"></TextBox>
+        <PasswordBox x:Name="passwordText" Grid.Row="1" Grid.Column="1"></PasswordBox>
+        <TextBox x:Name="phoneText" Grid.Row="2" Grid.Column="1"></TextBox>
+        <Calendar x:Name="dateText" Grid.Row="3" Grid.Column="1"></Calendar>
         <Button Name="BtSignUp" Content="Регистрация" Click="signupButton_Click" Grid.Row="4" Grid.ColumnSpan="2"></Button>
 
     </Grid>

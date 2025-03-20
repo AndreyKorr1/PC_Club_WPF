@@ -25,9 +25,54 @@ namespace ComputerClub
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void BtPC_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new PC());
+        }
+
+        private void BtDel_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Delivers());
+        }
+
+        private void BtDis_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Discounts());
+        }
+
+        private void BtPr_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Products());
+        }
+
+        private void BtRev_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Reviews());
+        }
+
+        private void BtRa_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Rates());
+        }
+
+        private void BtRe_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Receipts());
+        }
+
+        private void BtSe_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Sessions());
+        }
+
+        private void BtUs_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Users1());
+        }
+
+        private void BtProv_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Providers());
         }
     }
 }

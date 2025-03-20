@@ -9,6 +9,27 @@
       Title="Page1">
 
     <Grid Background="white">
-        <Button Content="Таблица Компьютеры" Click="Button_Click" Width="200" Height="50" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="134*"/>
+            <ColumnDefinition Width="175*"/>
+            <ColumnDefinition Width="163*"/>
+            <ColumnDefinition Width="137*"/>
+            <ColumnDefinition Width="191*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="128*"/>
+            <RowDefinition Height="63*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Таблица Компьютеры" Click="BtPC_Click"  Grid.Row="1" Grid.Column="0"/>
+        <Button Content="Таблица Доставка" Click="BtDel_Click"  Grid.Row="1" Grid.Column="1"/>
+        <Button Content="Таблица Скидки" Click="BtDis_Click"  Grid.Row="1" Grid.Column="2"/>
+        <Button Content="Таблица Товары" Click="BtPr_Click"  Grid.Row="1" Grid.Column="3"/>
+        <Button Content="Таблица Отзывы" Click="BtRev_Click"  Grid.Row="1" Grid.Column="4"/>
+        <Button Content="Таблица Поставщики" Click="BtProv_Click" Grid.Row="2" Grid.Column="0"/>
+        <Button Content="Таблица Тарифы" Click="BtRa_Click" Grid.Row="2" Grid.Column="1"/>
+        <Button Content="Таблмца Чеки" Click="BtRe_Click" Grid.Row="2" Grid.Column="2"/>
+        <Button Content="Таблица Сессии" Click="BtSe_Click" Grid.Row="2" Grid.Column="3"/>
+        <Button Content="Таблица Пользователи" Click="BtUs_Click" Grid.Row="2" Grid.Column="4"/>
     </Grid>
 </Page>

@@ -22,10 +22,10 @@ namespace ComputerClub
         }
     
         public decimal UserID { get; set; }
-        public string Password { get; set; }
         public string FirstName { get; set; }
         public string PhoneNumber { get; set; }
         public Nullable<System.DateTime> DateOfBirth { get; set; }
+        public string Password { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Reviews> Reviews { get; set; }

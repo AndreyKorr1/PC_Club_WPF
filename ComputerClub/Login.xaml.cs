@@ -22,11 +22,11 @@ namespace ComputerClub
     /// </summary>
     public partial class Login : Page
     {
+
         public Login()
         {
             InitializeComponent();
         }
-
         public static string GetHash(string password)
         {
             using (var hash = SHA1.Create())
@@ -39,7 +39,7 @@ namespace ComputerClub
         {
             if (loginText.Text.Length > 0)
             {
-                using (var db = new PC_ClubEntities1())
+                using (var db = new PC_ClubEntities4())
                 {
                     var user = db.Users.AsNoTracking().FirstOrDefault(u => u.FirstName == loginText.Text);
                     if (user != null)
@@ -72,19 +72,20 @@ namespace ComputerClub
                 }
                 else
                 {
-                    PC_ClubEntities1 db = new PC_ClubEntities1();
+                    PC_ClubEntities4 db = new PC_ClubEntities4();
                     Users userObject = new Users
                     {
+
                         FirstName = loginText.Text,
                         Password = GetHash(passwordText.Password),
-                        DateOfBirth = dataText.Text,
+                        DateOfBirth = dateText.SelectedDate,
                         PhoneNumber = phoneText.Text
                     };
 
                     db.Users.Add(userObject);
                     db.SaveChanges();
                     MessageBox.Show("Вы успешно зарегистрировались!", "Успешно!", MessageBoxButton.OK);
-                    NavigationService.Navigate(new Uri("/Pages/AuthLog.xaml", UriKind.Relative));
+                    NavigationService.Navigate(new Enter());
                 }
             }
             else MessageBox.Show("Укажите логин!");

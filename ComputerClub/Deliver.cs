@@ -15,9 +15,9 @@ namespace ComputerClub
     public partial class Deliver
     {
         public decimal DeliverID { get; set; }
-        public Nullable<decimal> ProviderID { get; set; }
-        public Nullable<decimal> ProductID { get; set; }
-        public Nullable<decimal> ProductQuantity { get; set; }
+        public decimal ProviderID { get; set; }
+        public decimal ProductID { get; set; }
+        public decimal ProductQuantity { get; set; }
     
         public virtual Product Product { get; set; }
         public virtual Provider Provider { get; set; }

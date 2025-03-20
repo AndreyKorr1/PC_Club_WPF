@@ -21,8 +21,8 @@ namespace ComputerClub
         }
     
         public decimal SessionID { get; set; }
-        public Nullable<decimal> UserID { get; set; }
-        public Nullable<decimal> PcID { get; set; }
+        public decimal UserID { get; set; }
+        public decimal PcID { get; set; }
         public Nullable<decimal> RateID { get; set; }
     
         public virtual Pc Pc { get; set; }

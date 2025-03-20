@@ -4,10 +4,10 @@
     <Key>
       <PropertyRef Name="DeliverID" />
     </Key>
-    <Property Name="DeliverID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="ProviderID" Type="Decimal" Precision="18" Scale="0" />
-    <Property Name="ProductID" Type="Decimal" Precision="18" Scale="0" />
-    <Property Name="ProductQuantity" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DeliverID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProviderID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ProductID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ProductQuantity" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
     <NavigationProperty Name="Product" Relationship="Self.FK_Deliver_Product" FromRole="Deliver" ToRole="Product" />
     <NavigationProperty Name="Provider" Relationship="Self.FK_Deliver_Provider" FromRole="Deliver" ToRole="Provider" />
   </EntityType>
@@ -15,25 +15,25 @@
     <Key>
       <PropertyRef Name="DiscountID" />
     </Key>
-    <Property Name="DiscountID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="DiscountID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="DiscountName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Procent" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Procent" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
     <NavigationProperty Name="Receipt" Relationship="Self.FK_Receipt_Discount" FromRole="Discount" ToRole="Receipt" />
   </EntityType>
   <EntityType Name="Pc">
     <Key>
       <PropertyRef Name="PcID" />
     </Key>
-    <Property Name="PcID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="Video_Card" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Name="CPU" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PcID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Video_Card" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CPU" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="Session" Relationship="Self.FK_Session_Pc" FromRole="Pc" ToRole="Session" />
   </EntityType>
   <EntityType Name="Product">
     <Key>
       <PropertyRef Name="ProductID" />
     </Key>
-    <Property Name="ProductID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ProductID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="ProductName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ProductPrice" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
     <NavigationProperty Name="Deliver" Relationship="Self.FK_Deliver_Product" FromRole="Product" ToRole="Deliver" />
@@ -43,7 +43,7 @@
     <Key>
       <PropertyRef Name="ProviderID" />
     </Key>
-    <Property Name="ProviderID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ProviderID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="CompanyName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="Deliver" Relationship="Self.FK_Deliver_Provider" FromRole="Provider" ToRole="Deliver" />
@@ -52,7 +52,7 @@
     <Key>
       <PropertyRef Name="RateID" />
     </Key>
-    <Property Name="RateID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="RateID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="RateName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="RatePrice" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
     <NavigationProperty Name="Session" Relationship="Self.FK_Session_Rate" FromRole="Rate" ToRole="Session" />
@@ -61,8 +61,8 @@
     <Key>
       <PropertyRef Name="ReciptID" />
     </Key>
-    <Property Name="ReciptID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="SessionID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ReciptID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SessionID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
     <Property Name="ProductID" Type="Decimal" Precision="18" Scale="0" />
     <Property Name="DiscountID" Type="Decimal" Precision="18" Scale="0" />
     <Property Name="Sum" Type="Decimal" Precision="18" Scale="0" />
@@ -74,9 +74,9 @@
     <Key>
       <PropertyRef Name="ReviewID" />
     </Key>
-    <Property Name="ReviewID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ReviewID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="UserID" Type="Decimal" Precision="18" Scale="0" />
-    <Property Name="Rating" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Rating" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
     <Property Name="Message" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="Users" Relationship="Self.FK_Reviews_Users" FromRole="Reviews" ToRole="Users" />
   </EntityType>
@@ -84,9 +84,9 @@
     <Key>
       <PropertyRef Name="SessionID" />
     </Key>
-    <Property Name="SessionID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="UserID" Type="Decimal" Precision="18" Scale="0" />
-    <Property Name="PcID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="SessionID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="PcID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
     <Property Name="RateID" Type="Decimal" Precision="18" Scale="0" />
     <NavigationProperty Name="Pc" Relationship="Self.FK_Session_Pc" FromRole="Session" ToRole="Pc" />
     <NavigationProperty Name="Rate" Relationship="Self.FK_Session_Rate" FromRole="Session" ToRole="Rate" />
@@ -107,16 +107,16 @@
     <Key>
       <PropertyRef Name="UserID" />
     </Key>
-    <Property Name="UserID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="PhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="DateOfBirth" Type="DateTime" Precision="0" />
+    <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="Reviews" Relationship="Self.FK_Reviews_Users" FromRole="Users" ToRole="Reviews" />
     <NavigationProperty Name="Session" Relationship="Self.FK_Session_Users" FromRole="Users" ToRole="Session" />
   </EntityType>
   <Association Name="FK_Deliver_Product">
-    <End Role="Product" Type="Self.Product" Multiplicity="0..1">
+    <End Role="Product" Type="Self.Product" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
     <End Role="Deliver" Type="Self.Deliver" Multiplicity="*" />
@@ -130,7 +130,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Deliver_Provider">
-    <End Role="Provider" Type="Self.Provider" Multiplicity="0..1">
+    <End Role="Provider" Type="Self.Provider" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
     <End Role="Deliver" Type="Self.Deliver" Multiplicity="*" />
@@ -158,7 +158,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Session_Pc">
-    <End Role="Pc" Type="Self.Pc" Multiplicity="0..1">
+    <End Role="Pc" Type="Self.Pc" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
     <End Role="Session" Type="Self.Session" Multiplicity="*" />
@@ -200,7 +200,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Receipt_Session">
-    <End Role="Session" Type="Self.Session" Multiplicity="0..1">
+    <End Role="Session" Type="Self.Session" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
     <End Role="Receipt" Type="Self.Receipt" Multiplicity="*" />
@@ -228,7 +228,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Session_Users">
-    <End Role="Users" Type="Self.Users" Multiplicity="0..1">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
     <End Role="Session" Type="Self.Session" Multiplicity="*" />
@@ -241,7 +241,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="PC_ClubEntities1" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="PC_ClubEntities4" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Deliver" EntityType="Self.Deliver" />
     <EntitySet Name="Discount" EntityType="Self.Discount" />
     <EntitySet Name="Pc" EntityType="Self.Pc" />

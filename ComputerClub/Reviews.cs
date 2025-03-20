@@ -16,7 +16,7 @@ namespace ComputerClub
     {
         public decimal ReviewID { get; set; }
         public Nullable<decimal> UserID { get; set; }
-        public Nullable<decimal> Rating { get; set; }
+        public decimal Rating { get; set; }
         public string Message { get; set; }
     
         public virtual Users Users { get; set; }

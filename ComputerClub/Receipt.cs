@@ -15,7 +15,7 @@ namespace ComputerClub
     public partial class Receipt
     {
         public decimal ReciptID { get; set; }
-        public Nullable<decimal> SessionID { get; set; }
+        public decimal SessionID { get; set; }
         public Nullable<decimal> ProductID { get; set; }
         public Nullable<decimal> DiscountID { get; set; }
         public Nullable<decimal> Sum { get; set; }

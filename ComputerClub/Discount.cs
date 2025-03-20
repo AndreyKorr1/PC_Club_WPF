@@ -22,7 +22,7 @@ namespace ComputerClub
     
         public decimal DiscountID { get; set; }
         public string DiscountName { get; set; }
-        public Nullable<decimal> Procent { get; set; }
+        public decimal Procent { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Receipt> Receipt { get; set; }

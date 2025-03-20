@@ -23,7 +23,7 @@ namespace ComputerClub
         public PC()
         {
             InitializeComponent();
-            DGpc.ItemsSource = PC_ClubEntities1.GetContext().Pc.ToList();
+            DGpc.ItemsSource = PC_ClubEntities4.GetContext().Pc.ToList();
         }
 
         private void BtDel_Click(object sender, RoutedEventArgs e)
@@ -34,6 +34,11 @@ namespace ComputerClub
         private void BtAdd_Click_1(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new AddPage());
+        }
+
+        private void BtBack_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Page1());
         }
     }
 }

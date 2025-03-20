@@ -22,5 +22,6 @@
         </DataGrid>
         <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,10,0,10" Width="170" Grid.Row="1" Name ="BtAdd" Click="BtAdd_Click_1"/>
         <Button Content="Удалить" HorizontalAlignment="Right" Margin="10,10,0,10" Width="170" Grid.Row="1" Name ="BtDel" Click="BtDel_Click"/>
+        <Button Content="Назад" HorizontalAlignment="Center" Grid.Row="1" Margin="10,10,0,10" Width="170" Name ="BtBack" Click="BtBack_Click"></Button>
     </Grid>
 </Page>

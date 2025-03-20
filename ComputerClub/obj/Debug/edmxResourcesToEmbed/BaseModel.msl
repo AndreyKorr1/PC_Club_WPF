@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище PC_ClubModelContainer" CdmEntityContainer="PC_ClubEntities1">
+  <EntityContainerMapping StorageEntityContainer="Хранилище PC_ClubModelContainer" CdmEntityContainer="PC_ClubEntities4">
     <EntitySetMapping Name="Deliver">
       <EntityTypeMapping TypeName="PC_ClubModel.Deliver">
         <MappingFragment StoreEntitySet="Deliver">
@@ -102,10 +102,10 @@
       <EntityTypeMapping TypeName="PC_ClubModel.Users">
         <MappingFragment StoreEntitySet="Users">
           <ScalarProperty Name="UserID" ColumnName="UserID" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
           <ScalarProperty Name="FirstName" ColumnName="FirstName" />
           <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
           <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -21,7 +21,7 @@
         <TextBlock Text="Введите логин"></TextBlock>
         <TextBlock Text="Введите пароль" Grid.Row="1"></TextBlock>
         <TextBox x:Name="LoginText" Grid.Column="1"></TextBox>
-        <TextBox x:Name="PasswordText" Grid.Row="1" Grid.Column="1"></TextBox>
+        <PasswordBox x:Name="PasswordText" Grid.Row="1" Grid.Column="1"></PasswordBox>
 
         <Button x:Name="enter" Content="Войти" Click="EnterClick" Grid.Row="2"></Button>
         <Button x:Name="registration" Content="Зарегестрироваться" Click="RegistrationClick" Grid.Row="2" Grid.Column="1"></Button>
