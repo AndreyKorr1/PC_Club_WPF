@@ -35,18 +35,27 @@ namespace ComputerClub
 
         private void EnterClick(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(LoginText.Text) || string.IsNullOrEmpty(PasswordText.Password))
+            Auth(LoginText.Text, PasswordText.Password);
+        }
+
+        public bool Auth(string Login, string Password)
+        {
+            if (string.IsNullOrEmpty(Login) || string.IsNullOrEmpty(Password))
             {
                 MessageBox.Show("Введите логин и пароль!");
-                return;
+                return false;
             }
 
-            string _password = GetHash(PasswordText.Password);
+            string _password = GetHash(Password);
             using (var db = new PC_ClubEntities4())
             {
-                var user = db.Users.AsNoTracking().FirstOrDefault(u => u.FirstName == LoginText.Text && u.Password == _password);
-                if (user == null) { MessageBox.Show("Пользователь с такими данными не найден!"); return; }
-                NavigationService.Navigate(new Page1());
+                var user = db.Users.AsNoTracking().FirstOrDefault(u => u.FirstName == Login && u.Password == _password);
+                if (user == null) { MessageBox.Show("Пользователь с такими данными не найден!"); return false; }
+                MessageBox.Show("пользователь найден");
+                //NavigationService.Navigate(new Page1());
+                LoginText.Clear();
+                PasswordText.Clear();
+                return true;
             }
         }
 

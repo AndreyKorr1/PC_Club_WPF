@@ -64,9 +64,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AddPage.xaml.cs">
-      <DependentUpon>AddPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="BaseModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -85,13 +82,28 @@
     <Compile Include="Deliver.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="DeliverAdd.xaml.cs">
+      <DependentUpon>DeliverAdd.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Delivers.xaml.cs">
       <DependentUpon>Delivers.xaml</DependentUpon>
     </Compile>
     <Compile Include="Discount.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Discounts.xaml.cs">
+    <Compile Include="DiscountAdd.xaml.cs">
+      <DependentUpon>DiscountAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProductAdd.xaml.cs">
+      <DependentUpon>ProductAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderAdd.xaml.cs">
+      <DependentUpon>ProviderAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RatesAdd.xaml.cs">
+      <DependentUpon>RatesAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tables\Discounts.xaml.cs">
       <DependentUpon>Discounts.xaml</DependentUpon>
     </Compile>
     <Compile Include="Enter.xaml.cs">
@@ -103,46 +115,49 @@
     <Compile Include="Pc.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="PC.xaml.cs">
+    <Compile Include="Tables\PC.xaml.cs">
       <DependentUpon>PC.xaml</DependentUpon>
     </Compile>
     <Compile Include="Page1.xaml.cs">
       <DependentUpon>Page1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AddPages\PcAddPage.xaml.cs">
+      <DependentUpon>PcAddPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Product.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Products.xaml.cs">
+    <Compile Include="Tables\Products.xaml.cs">
       <DependentUpon>Products.xaml</DependentUpon>
     </Compile>
     <Compile Include="Provider.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Providers.xaml.cs">
+    <Compile Include="Tables\Providers.xaml.cs">
       <DependentUpon>Providers.xaml</DependentUpon>
     </Compile>
     <Compile Include="Rate.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Rates.xaml.cs">
+    <Compile Include="Tables\Rates.xaml.cs">
       <DependentUpon>Rates.xaml</DependentUpon>
     </Compile>
     <Compile Include="Receipt.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Receipts.xaml.cs">
+    <Compile Include="Tables\Receipts.xaml.cs">
       <DependentUpon>Receipts.xaml</DependentUpon>
     </Compile>
     <Compile Include="Reviews.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Reviews.xaml.cs">
+    <Compile Include="Tables\Reviews.xaml.cs">
       <DependentUpon>Reviews.xaml</DependentUpon>
     </Compile>
     <Compile Include="Session.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Sessions.xaml.cs">
+    <Compile Include="Tables\Sessions.xaml.cs">
       <DependentUpon>Sessions.xaml</DependentUpon>
     </Compile>
     <Compile Include="sysdiagrams.cs">
@@ -151,10 +166,10 @@
     <Compile Include="Users.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Users1.xaml.cs">
+    <Compile Include="Tables\Users1.xaml.cs">
       <DependentUpon>Users1.xaml</DependentUpon>
     </Compile>
-    <Page Include="AddPage.xaml">
+    <Page Include="DeliverAdd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -162,7 +177,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Discounts.xaml">
+    <Page Include="DiscountAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProductAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProviderAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RatesAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tables\Discounts.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -186,7 +221,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PC.xaml">
+    <Page Include="Tables\PC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -194,31 +229,35 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Products.xaml">
+    <Page Include="AddPages\PcAddPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Providers.xaml">
+    <Page Include="Tables\Products.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Rates.xaml">
+    <Page Include="Tables\Providers.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Receipts.xaml">
+    <Page Include="Tables\Rates.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Reviews.xaml">
+    <Page Include="Tables\Receipts.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Sessions.xaml">
+    <Page Include="Tables\Reviews.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Users1.xaml">
+    <Page Include="Tables\Sessions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tables\Users1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -272,5 +311,6 @@
       <LastGenOutput>BaseModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

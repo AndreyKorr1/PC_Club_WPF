@@ -3,56 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\akory\\source\\repos\\ComputerClub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|C:\\Users\\akory\\source\\repos\\ComputerClub\\computerclub\\sessions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|solutionrelative:computerclub\\sessions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{442F3B38-C3EA-48A8-B5B8-809D9045D9B4}|testProject\\testProject.csproj|c:\\users\\akory\\source\\repos\\computerclub\\testproject\\unittest2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{442F3B38-C3EA-48A8-B5B8-809D9045D9B4}|testProject\\testProject.csproj|solutionrelative:testproject\\unittest2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|C:\\Users\\akory\\source\\repos\\ComputerClub\\computerclub\\sessions.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|solutionrelative:computerclub\\sessions.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|c:\\users\\akory\\source\\repos\\computerclub\\computerclub\\enter.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|solutionrelative:computerclub\\enter.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|C:\\Users\\akory\\source\\repos\\ComputerClub\\computerclub\\rates.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|solutionrelative:computerclub\\rates.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|c:\\users\\akory\\source\\repos\\computerclub\\computerclub\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|solutionrelative:computerclub\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|C:\\Users\\akory\\source\\repos\\ComputerClub\\computerclub\\rates.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|solutionrelative:computerclub\\rates.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|C:\\Users\\akory\\source\\repos\\ComputerClub\\computerclub\\addpages\\pcaddpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|solutionrelative:computerclub\\addpages\\pcaddpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|c:\\users\\akory\\source\\repos\\computerclub\\computerclub\\page1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|solutionrelative:computerclub\\page1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|C:\\Users\\akory\\source\\repos\\ComputerClub\\computerclub\\tables\\pc.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|solutionrelative:computerclub\\tables\\pc.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|c:\\users\\akory\\source\\repos\\computerclub\\computerclub\\page1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|solutionrelative:computerclub\\page1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|C:\\Users\\akory\\source\\repos\\ComputerClub\\computerclub\\tables\\pc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|solutionrelative:computerclub\\tables\\pc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|C:\\Users\\akory\\source\\repos\\ComputerClub\\computerclub\\providers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|solutionrelative:computerclub\\providers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|C:\\Users\\akory\\source\\repos\\ComputerClub\\computerclub\\providers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|solutionrelative:computerclub\\providers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|C:\\Users\\akory\\source\\repos\\ComputerClub\\computerclub\\receipts.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|solutionrelative:computerclub\\receipts.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|c:\\users\\akory\\source\\repos\\computerclub\\computerclub\\users1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|solutionrelative:computerclub\\users1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|C:\\Users\\akory\\source\\repos\\ComputerClub\\computerclub\\pc.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|solutionrelative:computerclub\\pc.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|C:\\Users\\akory\\source\\repos\\ComputerClub\\computerclub\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|solutionrelative:computerclub\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|C:\\Users\\akory\\source\\repos\\ComputerClub\\computerclub\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|solutionrelative:computerclub\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|C:\\Users\\akory\\source\\repos\\ComputerClub\\computerclub\\addpages\\pcaddpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EAD2DE43-495C-489C-955C-0F7DF606B2C1}|ComputerClub\\ComputerClub.csproj|solutionrelative:computerclub\\addpages\\pcaddpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,170 +38,93 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Page1.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Page1.xaml.cs",
-              "RelativeDocumentMoniker": "ComputerClub\\Page1.xaml.cs",
-              "ToolTip": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Page1.xaml.cs",
-              "RelativeToolTip": "ComputerClub\\Page1.xaml.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAlwDYAAAAtAAAA",
+              "DocumentIndex": 0,
+              "Title": "UnitTest2.cs",
+              "DocumentMoniker": "C:\\Users\\akory\\source\\repos\\ComputerClub\\testProject\\UnitTest2.cs",
+              "RelativeDocumentMoniker": "testProject\\UnitTest2.cs",
+              "ToolTip": "C:\\Users\\akory\\source\\repos\\ComputerClub\\testProject\\UnitTest2.cs",
+              "RelativeToolTip": "testProject\\UnitTest2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T18:42:01.315Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Users1.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Users1.xaml.cs",
-              "RelativeDocumentMoniker": "ComputerClub\\Users1.xaml.cs",
-              "ToolTip": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Users1.xaml.cs",
-              "RelativeToolTip": "ComputerClub\\Users1.xaml.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACgAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T18:35:26.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Sessions.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Sessions.xaml.cs",
-              "RelativeDocumentMoniker": "ComputerClub\\Sessions.xaml.cs",
-              "ToolTip": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Sessions.xaml.cs",
-              "RelativeToolTip": "ComputerClub\\Sessions.xaml.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAtwCgAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T18:22:47.938Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Rates.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Rates.xaml.cs",
-              "RelativeDocumentMoniker": "ComputerClub\\Rates.xaml.cs",
-              "ToolTip": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Rates.xaml.cs",
-              "RelativeToolTip": "ComputerClub\\Rates.xaml.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAawCgAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T17:03:38.051Z",
+              "WhenOpened": "2025-03-30T18:15:26.948Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Rates.xaml",
-              "DocumentMoniker": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Rates.xaml",
-              "RelativeDocumentMoniker": "ComputerClub\\Rates.xaml",
-              "ToolTip": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Rates.xaml",
-              "RelativeToolTip": "ComputerClub\\Rates.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-19T17:00:36.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Sessions.xaml",
-              "DocumentMoniker": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Sessions.xaml",
-              "RelativeDocumentMoniker": "ComputerClub\\Sessions.xaml",
-              "ToolTip": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Sessions.xaml",
-              "RelativeToolTip": "ComputerClub\\Sessions.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-19T18:18:51.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Receipts.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Receipts.xaml.cs",
-              "RelativeDocumentMoniker": "ComputerClub\\Receipts.xaml.cs",
-              "ToolTip": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Receipts.xaml.cs",
-              "RelativeToolTip": "ComputerClub\\Receipts.xaml.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAtwCgAAAA0AAAA",
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "ComputerClub\\Login.xaml.cs",
+              "ToolTip": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Login.xaml.cs",
+              "RelativeToolTip": "ComputerClub\\Login.xaml.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAwwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T18:17:18.23Z",
+              "WhenOpened": "2025-03-30T18:15:19.424Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Providers.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Providers.xaml.cs",
-              "RelativeDocumentMoniker": "ComputerClub\\Providers.xaml.cs",
-              "ToolTip": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Providers.xaml.cs",
-              "RelativeToolTip": "ComputerClub\\Providers.xaml.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAawBgAAAAXAAAA",
+              "DocumentIndex": 1,
+              "Title": "Enter.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Enter.xaml.cs",
+              "RelativeDocumentMoniker": "ComputerClub\\Enter.xaml.cs",
+              "ToolTip": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Enter.xaml.cs",
+              "RelativeToolTip": "ComputerClub\\Enter.xaml.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAIwEMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T16:58:20.27Z",
+              "WhenOpened": "2025-03-30T18:15:14.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PcAddPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\AddPages\\PcAddPage.xaml.cs",
+              "RelativeDocumentMoniker": "ComputerClub\\AddPages\\PcAddPage.xaml.cs",
+              "ToolTip": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\AddPages\\PcAddPage.xaml.cs",
+              "RelativeToolTip": "ComputerClub\\AddPages\\PcAddPage.xaml.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowEQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T14:36:48.429Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Providers.xaml",
-              "DocumentMoniker": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Providers.xaml",
-              "RelativeDocumentMoniker": "ComputerClub\\Providers.xaml",
-              "ToolTip": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Providers.xaml",
-              "RelativeToolTip": "ComputerClub\\Providers.xaml",
+              "Title": "PcAddPage.xaml",
+              "DocumentMoniker": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\AddPages\\PcAddPage.xaml",
+              "RelativeDocumentMoniker": "ComputerClub\\AddPages\\PcAddPage.xaml",
+              "ToolTip": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\AddPages\\PcAddPage.xaml",
+              "RelativeToolTip": "ComputerClub\\AddPages\\PcAddPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-19T16:55:13.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T17:42:40.517Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "PC.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\PC.xaml.cs",
-              "RelativeDocumentMoniker": "ComputerClub\\PC.xaml.cs",
-              "ToolTip": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\PC.xaml.cs",
-              "RelativeToolTip": "ComputerClub\\PC.xaml.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAABkAAAAMAAAA",
+              "DocumentMoniker": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Tables\\PC.xaml.cs",
+              "RelativeDocumentMoniker": "ComputerClub\\Tables\\PC.xaml.cs",
+              "ToolTip": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Tables\\PC.xaml.cs",
+              "RelativeToolTip": "ComputerClub\\Tables\\PC.xaml.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAQwEgAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T16:58:00.111Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T18:25:20.633Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Page1.xaml",
-              "DocumentMoniker": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Page1.xaml",
-              "RelativeDocumentMoniker": "ComputerClub\\Page1.xaml",
-              "ToolTip": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Page1.xaml",
-              "RelativeToolTip": "ComputerClub\\Page1.xaml",
+              "Title": "PC.xaml",
+              "DocumentMoniker": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Tables\\PC.xaml",
+              "RelativeDocumentMoniker": "ComputerClub\\Tables\\PC.xaml",
+              "ToolTip": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\Tables\\PC.xaml",
+              "RelativeToolTip": "ComputerClub\\Tables\\PC.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-19T15:14:28.303Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "ComputerClub\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\MainWindow.xaml",
-              "RelativeToolTip": "ComputerClub\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-19T15:14:17.476Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "ComputerClub\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\akory\\source\\repos\\ComputerClub\\ComputerClub\\MainWindow.xaml.cs",
-              "RelativeToolTip": "ComputerClub\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T16:44:50.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T17:48:35.156Z"
             }
           ]
         }
