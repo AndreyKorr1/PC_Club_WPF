@@ -21,12 +21,19 @@ namespace ComputerClub
     public partial class DeliverAdd : Page
     {
         private Deliver _currentDeliver = new Deliver();
-        public DeliverAdd(Deliver selectedPc)
+        public DeliverAdd(Deliver selectedDeliver)
         {
             InitializeComponent();
             DataContext = _currentDeliver;
             ComboProvider.ItemsSource = PC_ClubEntities4.GetContext().Provider.ToList();
             ComboProduct.ItemsSource = PC_ClubEntities4.GetContext().Product.ToList();
+
+            if (selectedDeliver != null)
+            {
+                _currentDeliver = selectedDeliver;
+            }
+
+            DataContext = _currentDeliver;
         }
 
         private void BtSaveClick(object sender, RoutedEventArgs e)

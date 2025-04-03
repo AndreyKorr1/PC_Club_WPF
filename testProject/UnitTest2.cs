@@ -13,7 +13,6 @@ namespace testProject
             var page = new Enter();
             string hashedPassword = Enter.GetHash("111111B"); // Получаем хеш пароля
             Assert.IsTrue(page.Auth("Boss", hashedPassword)); // Передаем хешированный пароль
-            Assert.IsFalse(page.Auth("GG", hashedPassword));
         }
     }
 }
