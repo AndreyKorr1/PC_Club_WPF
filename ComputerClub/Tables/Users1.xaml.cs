@@ -23,7 +23,7 @@ namespace ComputerClub
         public Users1()
         {
             InitializeComponent();
-            DGuser.ItemsSource = PC_ClubEntities4.GetContext().Users.ToList();
+            DGuser.ItemsSource = PC_ClubEntities5.GetContext().Users.ToList();
         }
 
         private void BtAdd_Click_1(object sender, RoutedEventArgs e)

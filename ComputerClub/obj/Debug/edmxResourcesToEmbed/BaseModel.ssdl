@@ -64,7 +64,7 @@
       <PropertyRef Name="ReviewID" />
     </Key>
     <Property Name="ReviewID" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="UserID" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="UserID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
     <Property Name="Rating" Type="numeric" Precision="18" Scale="0" Nullable="false" />
     <Property Name="Message" Type="varchar" MaxLength="100" />
   </EntityType>
@@ -168,9 +168,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Reviews_Users">
-    <End Role="Users" Type="Self.Users" Multiplicity="0..1">
-      <OnDelete Action="Cascade" />
-    </End>
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
     <End Role="Reviews" Type="Self.Reviews" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Users">

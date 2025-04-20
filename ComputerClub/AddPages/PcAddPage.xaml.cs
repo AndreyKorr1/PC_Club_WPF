@@ -54,12 +54,12 @@ namespace ComputerClub
 
             if (_currentPc.PcID == 0)
             {
-                PC_ClubEntities4.GetContext().Pc.Add(_currentPc);
+                PC_ClubEntities5.GetContext().Pc.Add(_currentPc);
             }
 
             try
             {
-                PC_ClubEntities4.GetContext().SaveChanges();
+                PC_ClubEntities5.GetContext().SaveChanges();
                 MessageBox.Show("Информация сохранена");
                 NavigationService.Navigate(new PC());
             }

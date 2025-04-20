@@ -4,18 +4,18 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="a55015ddc531426d9f548822d089193b" Name="Diagram1">
-        <EntityTypeShape EntityType="PC_ClubModel.Deliver" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
-        <EntityTypeShape EntityType="PC_ClubModel.Discount" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="PC_ClubModel.Pc" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="PC_ClubModel.Product" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="PC_ClubModel.Provider" Width="1.5" PointX="3" PointY="13.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="PC_ClubModel.Rate" Width="1.5" PointX="0.75" PointY="10.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="PC_ClubModel.Receipt" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="PC_ClubModel.Reviews" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="PC_ClubModel.Session" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="PC_ClubModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="PC_ClubModel.Users" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+      <Diagram DiagramId="fb2a584ef1d046a79090b167c5b27a6b" Name="Diagram1" ZoomLevel="68">
+        <EntityTypeShape EntityType="PC_ClubModel.Deliver" Width="1.5" PointX="5.875" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_ClubModel.Discount" Width="1.5" PointX="3.125" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_ClubModel.Pc" Width="1.5" PointX="0.875" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_ClubModel.Product" Width="1.5" PointX="10.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_ClubModel.Provider" Width="1.5" PointX="1.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_ClubModel.Rate" Width="1.5" PointX="11.375" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_ClubModel.Receipt" Width="1.5" PointX="8" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_ClubModel.Reviews" Width="1.5" PointX="5.625" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_ClubModel.Session" Width="1.5" PointX="4.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_ClubModel.sysdiagrams" Width="1.5" PointX="15.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PC_ClubModel.Users" Width="1.5" PointX="0.5" PointY="2.875" IsExpanded="true" />
         <AssociationConnector Association="PC_ClubModel.FK_Deliver_Product" ManuallyRouted="false" />
         <AssociationConnector Association="PC_ClubModel.FK_Deliver_Provider" ManuallyRouted="false" />
         <AssociationConnector Association="PC_ClubModel.FK_Receipt_Discount" ManuallyRouted="false" />

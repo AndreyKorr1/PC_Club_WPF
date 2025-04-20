@@ -23,7 +23,7 @@ namespace ComputerClub
         public Providers()
         {
             InitializeComponent();
-            DGprovider.ItemsSource = PC_ClubEntities4.GetContext().Provider.ToList();
+            DGprovider.ItemsSource = PC_ClubEntities5.GetContext().Provider.ToList();
         }
 
         private void BtAdd_Click_1(object sender, RoutedEventArgs e)
@@ -40,11 +40,11 @@ namespace ComputerClub
             {
                 try
                 {
-                    PC_ClubEntities4.GetContext().Provider.RemoveRange(ProviderForRemoving);
-                    PC_ClubEntities4.GetContext().SaveChanges();
+                    PC_ClubEntities5.GetContext().Provider.RemoveRange(ProviderForRemoving);
+                    PC_ClubEntities5.GetContext().SaveChanges();
                     MessageBox.Show("Данные удалены!");
 
-                    DGprovider.ItemsSource = PC_ClubEntities4.GetContext().Pc.ToList();
+                    DGprovider.ItemsSource = PC_ClubEntities5.GetContext().Pc.ToList();
                 }
 
                 catch (Exception ex)
@@ -68,8 +68,8 @@ namespace ComputerClub
         {
             if (Visibility == Visibility.Visible)
             {
-                PC_ClubEntities4.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
-                DGprovider.ItemsSource = PC_ClubEntities4.GetContext().Provider.ToList();
+                PC_ClubEntities5.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                DGprovider.ItemsSource = PC_ClubEntities5.GetContext().Provider.ToList();
             }
         }
     }

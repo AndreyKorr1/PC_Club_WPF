@@ -47,7 +47,7 @@ namespace ComputerClub
             }
 
             string _password = GetHash(Password);
-            using (var db = new PC_ClubEntities4())
+            using (var db = new PC_ClubEntities5())
             {
                 var user = db.Users.AsNoTracking().FirstOrDefault(u => u.FirstName == Login && u.Password == _password);
                 if (user == null) { MessageBox.Show("Пользователь с такими данными не найден!"); return false; }

@@ -45,11 +45,11 @@ namespace ComputerClub
             {
                 try
                 {
-                    PC_ClubEntities4.GetContext().Deliver.RemoveRange(DeliverForRemoving);
-                    PC_ClubEntities4.GetContext().SaveChanges();
+                    PC_ClubEntities5.GetContext().Deliver.RemoveRange(DeliverForRemoving);
+                    PC_ClubEntities5.GetContext().SaveChanges();
                     MessageBox.Show("Данные удалены!");
 
-                    DGdelivers.ItemsSource = PC_ClubEntities4.GetContext().Deliver.ToList();
+                    DGdelivers.ItemsSource = PC_ClubEntities5.GetContext().Deliver.ToList();
                 }
 
                 catch (Exception ex)
@@ -63,8 +63,8 @@ namespace ComputerClub
         {
             if (Visibility == Visibility.Visible)
             {
-                PC_ClubEntities4.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
-                DGdelivers.ItemsSource = PC_ClubEntities4.GetContext().Deliver.ToList();
+                PC_ClubEntities5.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                DGdelivers.ItemsSource = PC_ClubEntities5.GetContext().Deliver.ToList();
             }
         }
 

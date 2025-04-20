@@ -15,7 +15,7 @@ namespace ComputerClub
     public partial class Reviews
     {
         public decimal ReviewID { get; set; }
-        public Nullable<decimal> UserID { get; set; }
+        public decimal UserID { get; set; }
         public decimal Rating { get; set; }
         public string Message { get; set; }
     

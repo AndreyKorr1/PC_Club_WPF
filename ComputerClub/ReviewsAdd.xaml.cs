@@ -16,34 +16,25 @@ using System.Windows.Shapes;
 namespace ComputerClub
 {
     /// <summary>
-    /// Логика взаимодействия для DeliverAdd.xaml
+    /// Логика взаимодействия для ReviewsAdd.xaml
     /// </summary>
-    public partial class DeliverAdd : Page
+    public partial class ReviewsAdd : Page
     {
-        private Deliver _currentDeliver = new Deliver();
-        public DeliverAdd(Deliver selectedDeliver)
+        private Reviews _currentReview = new Reviews();
+        public ReviewsAdd()
         {
             InitializeComponent();
-            DataContext = _currentDeliver;
-
-            if (selectedDeliver != null)
-            {
-                _currentDeliver = selectedDeliver;
-            }
-
-            DataContext = _currentDeliver;
-            ComboProvider.ItemsSource = PC_ClubEntities5.GetContext().Provider.ToList();
-            ComboProduct.ItemsSource = PC_ClubEntities5.GetContext().Product.ToList();
+            DataContext = _currentReview;
+            ComboUsers.ItemsSource = PC_ClubEntities5.GetContext().Users.ToList();
         }
 
         private void BtSaveClick(object sender, RoutedEventArgs e)
         {
             StringBuilder errors = new StringBuilder();
 
-
-            if (_currentDeliver.ProductQuantity < 1)
+            if (_currentReview.Rating < 0 || _currentReview.Rating > 5) 
             {
-                errors.AppendLine("Укажите колличество товара");
+                errors.AppendLine("Укажите корректный рейтинг");
             }
 
             if (errors.Length > 0)
@@ -52,16 +43,16 @@ namespace ComputerClub
                 return;
             }
 
-            if (_currentDeliver.DeliverID == 0)
+            if (_currentReview.ReviewID == 0)
             {
-                PC_ClubEntities5.GetContext().Deliver.Add(_currentDeliver);
+                PC_ClubEntities5.GetContext().Reviews.Add(_currentReview);
             }
 
             try
             {
                 PC_ClubEntities5.GetContext().SaveChanges();
                 MessageBox.Show("Информация сохранена");
-                NavigationService.Navigate(new Deliver());
+                NavigationService.Navigate(new PC());
             }
             catch (Exception ex)
             {
@@ -71,7 +62,7 @@ namespace ComputerClub
 
         private void BtBackClick(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Delivers());
+            NavigationService.Navigate(new Reviews());
         }
     }
 }

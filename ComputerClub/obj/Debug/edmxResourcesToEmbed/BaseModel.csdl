@@ -75,7 +75,7 @@
       <PropertyRef Name="ReviewID" />
     </Key>
     <Property Name="ReviewID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="UserID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="UserID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
     <Property Name="Rating" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
     <Property Name="Message" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="Users" Relationship="Self.FK_Reviews_Users" FromRole="Reviews" ToRole="Users" />
@@ -214,9 +214,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Reviews_Users">
-    <End Role="Users" Type="Self.Users" Multiplicity="0..1">
-      <OnDelete Action="Cascade" />
-    </End>
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
     <End Role="Reviews" Type="Self.Reviews" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Users">
@@ -241,7 +239,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="PC_ClubEntities4" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="PC_ClubEntities5" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Deliver" EntityType="Self.Deliver" />
     <EntitySet Name="Discount" EntityType="Self.Discount" />
     <EntitySet Name="Pc" EntityType="Self.Pc" />

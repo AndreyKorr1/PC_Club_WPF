@@ -54,12 +54,12 @@ namespace ComputerClub
 
             if (_currentRate.RateID == 0)
             {
-                PC_ClubEntities4.GetContext().Rate.Add(_currentRate);
+                PC_ClubEntities5.GetContext().Rate.Add(_currentRate);
             }
 
             try
             {
-                PC_ClubEntities4.GetContext().SaveChanges();
+                PC_ClubEntities5.GetContext().SaveChanges();
                 MessageBox.Show("Информация сохранена");
                 NavigationService.Navigate(new Rates());
             }

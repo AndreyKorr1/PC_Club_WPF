@@ -53,12 +53,12 @@ namespace ComputerClub
 
             if (_currentProduct.ProductID == 0)
             {
-                PC_ClubEntities4.GetContext().Product.Add(_currentProduct);
+                PC_ClubEntities5.GetContext().Product.Add(_currentProduct);
             }
 
             try
             {
-                PC_ClubEntities4.GetContext().SaveChanges();
+                PC_ClubEntities5.GetContext().SaveChanges();
                 MessageBox.Show("Информация сохранена");
                 NavigationService.Navigate(new Products());
             }

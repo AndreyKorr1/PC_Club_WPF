@@ -35,11 +35,11 @@ namespace ComputerClub
             {
                 try
                 {
-                    PC_ClubEntities4.GetContext().Pc.RemoveRange(PcForRemoving);
-                    PC_ClubEntities4.GetContext().SaveChanges();
+                    PC_ClubEntities5.GetContext().Pc.RemoveRange(PcForRemoving);
+                    PC_ClubEntities5.GetContext().SaveChanges();
                     MessageBox.Show("Данные удалены!");
 
-                    DGpc.ItemsSource = PC_ClubEntities4.GetContext().Pc.ToList();
+                    DGpc.ItemsSource = PC_ClubEntities5.GetContext().Pc.ToList();
                 }
 
                 catch (Exception ex)
@@ -63,8 +63,8 @@ namespace ComputerClub
         {
             if (Visibility == Visibility.Visible)
             {
-                PC_ClubEntities4.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
-                DGpc.ItemsSource = PC_ClubEntities4.GetContext().Pc.ToList();
+                PC_ClubEntities5.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                DGpc.ItemsSource = PC_ClubEntities5.GetContext().Pc.ToList();
             }
         }
 
@@ -72,5 +72,27 @@ namespace ComputerClub
         {
             NavigationService.Navigate(new PcAddPage((sender as Button).DataContext as Pc));
         }
+
+        private void UpdateProducts()
+        {
+            var currentProducts = Ent.GetContext().Products.ToList();
+            currentProducts = currentProducts.Where(x =>
+                x.NameOfProduct.ToLower().Contains(SearchProductName.Text.ToLower())).ToList();
+
+            if (SortProductCategory.SelectedIndex == 0)
+                ListProduct.ItemsSource = currentProducts.Where(x =>
+                    x.ProductCategories.NameOfCategory.ToLower().Contains(SortProductCategory.Text.ToLower())).ToList();
+        }
+
+        private void SearchProductName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            UpdateProducts();
+        }
+
+        private void SortProductCategory_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            UpdateProducts();
+        }
+
     }
 }

@@ -13,19 +13,19 @@ namespace ComputerClub
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class PC_ClubEntities4 : DbContext
+    public partial class PC_ClubEntities5 : DbContext
     {
-        private static PC_ClubEntities4 _context;
-        public PC_ClubEntities4()
-            : base("name=PC_ClubEntities4")
+        private static PC_ClubEntities5 _context;
+        public PC_ClubEntities5()
+            : base("name=PC_ClubEntities5")
         {
         }
 
-        public static PC_ClubEntities4 GetContext()
+        public static PC_ClubEntities5 GetContext()
         {
-            if (_context == null)
+            if(_context == null)
             {
-                _context = new PC_ClubEntities4();
+                _context = new PC_ClubEntities5();
             }
             return _context;
         }

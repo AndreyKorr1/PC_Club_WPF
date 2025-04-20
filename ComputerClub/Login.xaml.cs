@@ -39,7 +39,7 @@ namespace ComputerClub
         {
             if (loginText.Text.Length > 0)
             {
-                using (var db = new PC_ClubEntities4())
+                using (var db = new PC_ClubEntities5())
                 {
                     var user = db.Users.AsNoTracking().FirstOrDefault(u => u.FirstName == loginText.Text);
                     if (user != null)
@@ -72,7 +72,7 @@ namespace ComputerClub
                 }
                 else
                 {
-                    PC_ClubEntities4 db = new PC_ClubEntities4();
+                    PC_ClubEntities5 db = new PC_ClubEntities5();
                     Users userObject = new Users
                     {
 

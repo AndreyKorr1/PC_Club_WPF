@@ -23,7 +23,7 @@ namespace ComputerClub
         public Receipts()
         {
             InitializeComponent();
-            DGreceipt.ItemsSource = PC_ClubEntities4.GetContext().Receipt.ToList();
+            DGreceipt.ItemsSource = PC_ClubEntities5.GetContext().Receipt.ToList();
         }
 
         private void BtAdd_Click_1(object sender, RoutedEventArgs e)

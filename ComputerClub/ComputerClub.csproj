@@ -94,14 +94,41 @@
     <Compile Include="DiscountAdd.xaml.cs">
       <DependentUpon>DiscountAdd.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pc.cs">
+      <DependentUpon>BaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>BaseModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="ProductAdd.xaml.cs">
       <DependentUpon>ProductAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Provider.cs">
+      <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderAdd.xaml.cs">
       <DependentUpon>ProviderAdd.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Rate.cs">
+      <DependentUpon>BaseModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="RatesAdd.xaml.cs">
       <DependentUpon>RatesAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt.cs">
+      <DependentUpon>BaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reviews.cs">
+      <DependentUpon>BaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewsAdd.xaml.cs">
+      <DependentUpon>ReviewsAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Session.cs">
+      <DependentUpon>BaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Tables\Discounts.xaml.cs">
       <DependentUpon>Discounts.xaml</DependentUpon>
@@ -112,9 +139,6 @@
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pc.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Tables\PC.xaml.cs">
       <DependentUpon>PC.xaml</DependentUpon>
     </Compile>
@@ -124,50 +148,29 @@
     <Compile Include="AddPages\PcAddPage.xaml.cs">
       <DependentUpon>PcAddPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Product.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Tables\Products.xaml.cs">
       <DependentUpon>Products.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Provider.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Tables\Providers.xaml.cs">
       <DependentUpon>Providers.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Rate.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Tables\Rates.xaml.cs">
       <DependentUpon>Rates.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Receipt.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Tables\Receipts.xaml.cs">
       <DependentUpon>Receipts.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Reviews.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Tables\Reviews.xaml.cs">
       <DependentUpon>Reviews.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Session.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Tables\Sessions.xaml.cs">
       <DependentUpon>Sessions.xaml</DependentUpon>
     </Compile>
-    <Compile Include="sysdiagrams.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+    <Compile Include="Tables\Users1.xaml.cs">
+      <DependentUpon>Users1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Users.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Tables\Users1.xaml.cs">
-      <DependentUpon>Users1.xaml</DependentUpon>
     </Compile>
     <Page Include="DeliverAdd.xaml">
       <SubType>Designer</SubType>
@@ -190,6 +193,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="RatesAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ReviewsAdd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -311,6 +318,5 @@
       <LastGenOutput>BaseModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -23,7 +23,7 @@ namespace ComputerClub
         public Sessions()
         {
             InitializeComponent();
-            DGsession.ItemsSource = PC_ClubEntities4.GetContext().Session.ToList();
+            DGsession.ItemsSource = PC_ClubEntities5.GetContext().Session.ToList();
         }
 
         private void BtAdd_Click_1(object sender, RoutedEventArgs e)

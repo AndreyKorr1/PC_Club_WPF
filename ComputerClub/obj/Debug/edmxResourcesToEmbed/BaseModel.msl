@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище PC_ClubModelContainer" CdmEntityContainer="PC_ClubEntities4">
+  <EntityContainerMapping StorageEntityContainer="Хранилище PC_ClubModelContainer" CdmEntityContainer="PC_ClubEntities5">
     <EntitySetMapping Name="Deliver">
       <EntityTypeMapping TypeName="PC_ClubModel.Deliver">
         <MappingFragment StoreEntitySet="Deliver">

@@ -23,7 +23,7 @@ namespace ComputerClub
         public Reviews()
         {
             InitializeComponent();
-            DGreviews.ItemsSource = PC_ClubEntities4.GetContext().Reviews.ToList();
+            //DGreviews.ItemsSource = PC_ClubEntities4.GetContext().Reviews.ToList();
         }
 
         private void BtBack_Click(object sender, RoutedEventArgs e)
@@ -33,7 +33,7 @@ namespace ComputerClub
 
         private void BtAdd_Click_1(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new ReviewsAdd());
         }
 
         private void BtDel_Click(object sender, RoutedEventArgs e)
@@ -44,6 +44,15 @@ namespace ComputerClub
         private void BtEd_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (Visibility == Visibility.Visible)
+            {
+                PC_ClubEntities5.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                DGreviews.ItemsSource = PC_ClubEntities5.GetContext().Reviews.ToList();
+            }
         }
     }
 }

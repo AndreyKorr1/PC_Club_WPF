@@ -60,3 +60,5 @@ C:\Users\akory\source\repos\ComputerClub\ComputerClub\obj\Debug\RatesAdd.g.cs
 C:\Users\akory\source\repos\ComputerClub\ComputerClub\obj\Debug\RatesAdd.baml
 C:\Users\akory\source\repos\ComputerClub\ComputerClub\obj\Debug\DiscountAdd.g.cs
 C:\Users\akory\source\repos\ComputerClub\ComputerClub\obj\Debug\DiscountAdd.baml
+C:\Users\akory\source\repos\ComputerClub\ComputerClub\obj\Debug\ReviewsAdd.g.cs
+C:\Users\akory\source\repos\ComputerClub\ComputerClub\obj\Debug\ReviewsAdd.baml

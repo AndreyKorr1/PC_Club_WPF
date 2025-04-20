@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\akory\source\repos\ComputerClub\ComputerClub\App.xaml
-21769315943
+2280890237
 2-1161474625
-38-415257788
+39826266998
 182142034315
-DeliverAdd.xaml;Delivers.xaml;DiscountAdd.xaml;ProductAdd.xaml;ProviderAdd.xaml;RatesAdd.xaml;Styles.xaml;Tables\Discounts.xaml;Enter.xaml;Login.xaml;MainWindow.xaml;Tables\PC.xaml;Page1.xaml;AddPages\PcAddPage.xaml;Tables\Products.xaml;Tables\Providers.xaml;Tables\Rates.xaml;Tables\Receipts.xaml;Tables\Reviews.xaml;Tables\Sessions.xaml;Tables\Users1.xaml;
+DeliverAdd.xaml;Delivers.xaml;DiscountAdd.xaml;ProductAdd.xaml;ProviderAdd.xaml;RatesAdd.xaml;ReviewsAdd.xaml;Styles.xaml;Tables\Discounts.xaml;Enter.xaml;Login.xaml;MainWindow.xaml;Tables\PC.xaml;Page1.xaml;AddPages\PcAddPage.xaml;Tables\Products.xaml;Tables\Providers.xaml;Tables\Rates.xaml;Tables\Receipts.xaml;Tables\Reviews.xaml;Tables\Sessions.xaml;Tables\Users1.xaml;
 
-False
+True
 

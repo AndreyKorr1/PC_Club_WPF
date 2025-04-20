@@ -54,12 +54,12 @@ namespace ComputerClub
 
             if (_currentDiscount.DiscountID == 0)
             {
-                PC_ClubEntities4.GetContext().Discount.Add(_currentDiscount);
+                PC_ClubEntities5.GetContext().Discount.Add(_currentDiscount);
             }
 
             try
             {
-                PC_ClubEntities4.GetContext().SaveChanges();
+                PC_ClubEntities5.GetContext().SaveChanges();
                 MessageBox.Show("Информация сохранена");
                 NavigationService.Navigate(new Discounts());
             }
