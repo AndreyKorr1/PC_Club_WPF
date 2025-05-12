@@ -23,7 +23,7 @@ namespace ComputerClub
         public Products()
         {
             InitializeComponent();
-            //DGproduct.ItemsSource = PC_ClubEntities4.GetContext().Product.ToList();
+            //DGproduct.ItemsSource = PC_ClubEntities5.GetContext().Product.ToList();
         }
 
         private void BtBack_Click(object sender, RoutedEventArgs e)
@@ -71,6 +71,11 @@ namespace ComputerClub
         private void BtEd_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new ProductAdd((sender as Button).DataContext as Product));
+        }
+
+        private void BtOtch_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new soldProducts());
         }
     }
 }

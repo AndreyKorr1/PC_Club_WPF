@@ -10,9 +10,11 @@
 namespace ComputerClub
 {
     using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
+    using System.Linq;
+
     public partial class PC_ClubEntities5 : DbContext
     {
         private static PC_ClubEntities5 _context;
@@ -23,13 +25,62 @@ namespace ComputerClub
 
         public static PC_ClubEntities5 GetContext()
         {
-            if(_context == null)
+            if (_context == null)
             {
                 _context = new PC_ClubEntities5();
             }
             return _context;
         }
-    
+
+        public List<TariffPopularityResult> GetTopTariffs()
+        {
+            // LINQ запрос для получения популярных тарифов
+            var topTariffs = (from check in this.Receipt
+                              join session in this.Session on check.SessionID equals session.SessionID // ID сессии в чеке
+                          join tariff in this.Rate on session.RateID equals tariff.RateID   // ID тарифа в сессии
+                          group tariff by tariff.RateName // Группируем по названию тарифа
+                              into tariffGroup
+                              orderby tariffGroup.Count() descending
+                              select new TariffPopularityResult
+                              {
+                                  TariffName = tariffGroup.Key,
+                                  UsageCount = tariffGroup.Count()
+                              }).ToList();
+
+            return topTariffs;
+        }
+
+        public class TariffPopularityResult
+        {
+            public string TariffName { get; set; }
+            public int UsageCount { get; set; }
+        }
+
+        public class ProductSalesReport
+        {
+            public string ProductName { get; set; }
+            public int QuantitySold { get; set; }
+            public decimal TotalAmount { get; set; }
+        }
+
+        public List<ProductSalesReport> GetProductSalesReport()
+        {
+            var productSales = (from check in this.Receipt
+                                join product in this.Product on check.ProductID equals product.ProductID
+                                group check by new { product.ProductName, product.ProductPrice } into productGroup
+                                select new ProductSalesReport
+                                {
+                                    ProductName = productGroup.Key.ProductName,
+                                    QuantitySold = productGroup.Count(), // Количество чеков с этим товаром
+                                    TotalAmount = productGroup.Count() * productGroup.Key.ProductPrice // Сумма продаж
+                                }).ToList();
+
+            return productSales;
+        }
+
+
+
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
@@ -47,4 +98,6 @@ namespace ComputerClub
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Users> Users { get; set; }
     }
+
+    
 }

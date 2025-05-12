@@ -9,11 +9,17 @@
       Title="Rates" IsVisibleChanged="Page_IsVisibleChanged">
 
     <Grid Background="white">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="379*"/>
             <RowDefinition Height="56*"/>
         </Grid.RowDefinitions>
-        <DataGrid x:Name="DGrate" AutoGenerateColumns="False" IsReadOnly="True">
+        <DataGrid x:Name="DGrate" AutoGenerateColumns="False" IsReadOnly="True" Grid.ColumnSpan="4">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Номер Тарифа" Binding="{Binding RateID}" Width="*"></DataGridTextColumn>
                 <DataGridTextColumn Header="Название тарифа" Binding="{Binding RateName}" Width="*"></DataGridTextColumn>
@@ -27,8 +33,9 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,10,0,10" Width="170" Grid.Row="1" Name ="BtAdd" Click="BtAdd_Click_1"/>
-        <Button Content="Удалить" HorizontalAlignment="Right" Margin="10,10,0,10" Width="170" Grid.Row="1" Name ="BtDel" Click="BtDel_Click"/>
-        <Button Content="Назад" HorizontalAlignment="Center" Grid.Row="1" Margin="10,10,0,10" Width="170" Name ="BtBack" Click="BtBack_Click"></Button>
+        <Button Content="Добавить" Name ="BtAdd" Click="BtAdd_Click_1" Grid.Column="0"  Grid.Row="1"/>
+        <Button Content="Удалить" Name ="BtDel" Click="BtDel_Click" Grid.Column="1"  Grid.Row="1"/>
+        <Button Content="Назад"  Name ="BtBack" Click="BtBack_Click" Grid.Column="3" Grid.Row="1"/>
+        <Button Content="Отчет о тарифах" Name="BtOtch" Click="BtOtch_Click" Grid.Column="2" Grid.Row="1"/>
     </Grid>
 </Page>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -24,6 +25,8 @@ namespace ComputerClub
         {
             InitializeComponent();
         }
+
+
 
         private void BtPC_Click(object sender, RoutedEventArgs e)
         {

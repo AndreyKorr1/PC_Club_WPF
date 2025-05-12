@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ComputerClub.Buyer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
@@ -51,10 +52,21 @@ namespace ComputerClub
             {
                 var user = db.Users.AsNoTracking().FirstOrDefault(u => u.FirstName == Login && u.Password == _password);
                 if (user == null) { MessageBox.Show("Пользователь с такими данными не найден!"); return false; }
-                //MessageBox.Show("пользователь найден");
-                NavigationService.Navigate(new Page1());
-                //LoginText.Clear();
-                //PasswordText.Clear();
+                if (LoginText.Text == "Manager") {
+                    NavigationService.Navigate(new MainManager());
+                }
+                else if (LoginText.Text == "Buyer")
+                {
+                    NavigationService.Navigate(new MainBuyer());
+                }
+                else if (LoginText.Text == "Admin")
+                {
+                    NavigationService.Navigate(new Page1());
+                }
+                else
+                {
+                    MessageBox.Show("у этого пользователя нет прав");
+                }
                 return true;
             }
         }

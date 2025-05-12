@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:ComputerClub"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Receipts">
+      Title="Receipts" IsVisibleChanged="Page_IsVisibleChanged">
 
     <Grid Background="white">
         <Grid.RowDefinitions>

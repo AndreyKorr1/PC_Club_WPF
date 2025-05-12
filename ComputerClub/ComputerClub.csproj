@@ -79,20 +79,56 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BaseModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Buyer\DeliverBuyerAdd.xaml.cs">
+      <DependentUpon>DeliverBuyerAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Buyer\DeliversBuyer.xaml.cs">
+      <DependentUpon>DeliversBuyer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Buyer\MainBuyer.xaml.cs">
+      <DependentUpon>MainBuyer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Buyer\ProductsBuyer.xaml.cs">
+      <DependentUpon>ProductsBuyer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Buyer\ProvidersBuyer.xaml.cs">
+      <DependentUpon>ProvidersBuyer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Deliver.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DeliverAdd.xaml.cs">
+    <Compile Include="AddPages\DeliverAdd.xaml.cs">
       <DependentUpon>DeliverAdd.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Delivers.xaml.cs">
+    <Compile Include="PopularRate.xaml.cs">
+      <DependentUpon>PopularRate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="soldProducts.xaml.cs">
+      <DependentUpon>soldProducts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tables\Delivers.xaml.cs">
       <DependentUpon>Delivers.xaml</DependentUpon>
     </Compile>
     <Compile Include="Discount.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DiscountAdd.xaml.cs">
+    <Compile Include="AddPages\DiscountAdd.xaml.cs">
       <DependentUpon>DiscountAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainManager.xaml.cs">
+      <DependentUpon>MainManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\DeliversManager.xaml.cs">
+      <DependentUpon>DeliversManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\PcAddPageManager.xaml.cs">
+      <DependentUpon>PcAddPageManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ReceiptAddManager.xaml.cs">
+      <DependentUpon>ReceiptAddManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\SessionAddManager.xaml.cs">
+      <DependentUpon>SessionAddManager.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pc.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
@@ -100,35 +136,68 @@
     <Compile Include="Product.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="ProductAdd.xaml.cs">
+    <Compile Include="AddPages\ProductAdd.xaml.cs">
       <DependentUpon>ProductAdd.xaml</DependentUpon>
     </Compile>
     <Compile Include="Provider.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="ProviderAdd.xaml.cs">
+    <Compile Include="AddPages\ProviderAdd.xaml.cs">
       <DependentUpon>ProviderAdd.xaml</DependentUpon>
     </Compile>
     <Compile Include="Rate.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="RatesAdd.xaml.cs">
+    <Compile Include="AddPages\RatesAdd.xaml.cs">
       <DependentUpon>RatesAdd.xaml</DependentUpon>
     </Compile>
     <Compile Include="Receipt.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="AddPages\ReceiptAdd.xaml.cs">
+      <DependentUpon>ReceiptAdd.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Reviews.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="ReviewsAdd.xaml.cs">
+    <Compile Include="AddPages\ReviewsAdd.xaml.cs">
       <DependentUpon>ReviewsAdd.xaml</DependentUpon>
     </Compile>
     <Compile Include="Session.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="AddPages\SessionAdd.xaml.cs">
+      <DependentUpon>SessionAdd.xaml</DependentUpon>
+    </Compile>
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\DiscountsManager.xaml.cs">
+      <DependentUpon>DiscountsManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\PCManager.xaml.cs">
+      <DependentUpon>PCManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ProductsManager.xaml.cs">
+      <DependentUpon>ProductsManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ProvidersManager.xaml.cs">
+      <DependentUpon>ProvidersManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\RatesManager.xaml.cs">
+      <DependentUpon>RatesManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ReceiptsManager.xaml.cs">
+      <DependentUpon>ReceiptsManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ReviewsManager.xaml.cs">
+      <DependentUpon>ReviewsManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\SessionsManager.xaml.cs">
+      <DependentUpon>SessionsManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\UsersManager.xaml.cs">
+      <DependentUpon>UsersManager.xaml</DependentUpon>
     </Compile>
     <Compile Include="Tables\Discounts.xaml.cs">
       <DependentUpon>Discounts.xaml</DependentUpon>
@@ -169,40 +238,133 @@
     <Compile Include="Tables\Users1.xaml.cs">
       <DependentUpon>Users1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TariffService.cs" />
     <Compile Include="Users.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
-    <Page Include="DeliverAdd.xaml">
+    <Page Include="AddPages\DeliverAdd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Delivers.xaml">
+    <Page Include="Buyer\DeliverBuyerAdd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Buyer\DeliversBuyer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Buyer\MainBuyer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DiscountAdd.xaml">
+    <Page Include="Buyer\ProductsBuyer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Buyer\ProvidersBuyer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PopularRate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ProductAdd.xaml">
+    <Page Include="soldProducts.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ProviderAdd.xaml">
+    <Page Include="StyleDictionary.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="RatesAdd.xaml">
+    <Page Include="Tables\Delivers.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ReviewsAdd.xaml">
+    <Page Include="AddPages\DiscountAdd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Styles.xaml">
+    <Page Include="AddPages\ProductAdd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddPages\ProviderAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddPages\RatesAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddPages\ReceiptAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddPages\ReviewsAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddPages\SessionAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainManager.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\DeliversManager.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\PcAddPageManager.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\ReceiptAddManager.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\SessionAddManager.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\DiscountsManager.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\PCManager.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\ProductsManager.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\ProvidersManager.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\RatesManager.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\ReceiptsManager.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\ReviewsManager.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\SessionsManager.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\UsersManager.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Tables\Discounts.xaml">
       <SubType>Designer</SubType>
@@ -318,5 +480,6 @@
       <LastGenOutput>BaseModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -9,11 +9,17 @@
       Title="Products" IsVisibleChanged="Page_IsVisibleChanged">
 
     <Grid Background="white">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="379*"/>
             <RowDefinition Height="56*"/>
         </Grid.RowDefinitions>
-        <DataGrid x:Name="DGproduct" AutoGenerateColumns="False" IsReadOnly="True">
+        <DataGrid x:Name="DGproduct" AutoGenerateColumns="False" IsReadOnly="True" Grid.ColumnSpan="4">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Номер товара" Binding="{Binding ProductID}" Width="*"></DataGridTextColumn>
                 <DataGridTextColumn Header="Название товара" Binding="{Binding ProductName}" Width="*"></DataGridTextColumn>
@@ -27,8 +33,9 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,10,0,10" Width="170" Grid.Row="1" Name ="BtAdd" Click="BtAdd_Click_1"/>
-        <Button Content="Удалить" HorizontalAlignment="Right" Margin="10,10,0,10" Width="170" Grid.Row="1" Name ="BtDel" Click="BtDel_Click"/>
-        <Button Content="Назад" HorizontalAlignment="Center" Grid.Row="1" Margin="10,10,0,10" Width="170" Name ="BtBack" Click="BtBack_Click"></Button>
+        <Button Content="Добавить" Grid.Row="1" Grid.Column="0" Name ="BtAdd" Click="BtAdd_Click_1"/>
+        <Button Content="Удалить" Grid.Row="1" Grid.Column="1" Name ="BtDel" Click="BtDel_Click"/>
+        <Button Content="Назад" Grid.Row="1"  Name ="BtBack" Click="BtBack_Click" Grid.Column="3"></Button>
+        <Button Content="Проданные товары" Name="BtOtch" Click="BtOtch_Click" Grid.Row="1" Grid.Column="2"/>
     </Grid>
 </Page>

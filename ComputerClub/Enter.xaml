@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Enter">
 
-    <Grid Style="{StaticResource GridSt}">
+    <Grid Background="AliceBlue">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="189*"/>
             <ColumnDefinition Width="211*"/>
@@ -18,13 +18,13 @@
             <RowDefinition Height="119*"/>
             <RowDefinition Height="190*"/>
         </Grid.RowDefinitions>
-        <TextBlock Style="{StaticResource TextBlockSt}" Text="Введите логин"></TextBlock>
-        <TextBlock Style="{StaticResource TextBlockSt}" Text="Введите пароль" Grid.Row="1"></TextBlock>
-        <TextBox Style="{StaticResource TextBoxSt}" x:Name="LoginText" Grid.Column="1"></TextBox>
-        <PasswordBox Style="{StaticResource PasswordBoxSt}" x:Name="PasswordText" Grid.Row="1" Grid.Column="1"></PasswordBox>
+        <TextBlock  Text="Введите логин"></TextBlock>
+        <TextBlock  Text="Введите пароль" Grid.Row="1"></TextBlock>
+        <TextBox  x:Name="LoginText" Grid.Column="1"></TextBox>
+        <PasswordBox  x:Name="PasswordText" Grid.Row="1" Grid.Column="1"></PasswordBox>
 
-        <Button Style="{StaticResource ButtonSt}" x:Name="enter" Content="Войти" Click="EnterClick" Grid.Row="2"></Button>
-        <Button Style="{StaticResource ButtonSt}" x:Name="registration" Content="Зарегестрироваться" Click="RegistrationClick" Grid.Row="2" Grid.Column="1"></Button>
+        <Button  x:Name="enter" Content="Войти" Click="EnterClick" Grid.Row="2"></Button>
+        <Button  x:Name="registration" Content="Зарегестрироваться" Click="RegistrationClick" Grid.Row="2" Grid.Column="1"></Button>
 
     </Grid>
 </Page>

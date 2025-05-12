@@ -72,5 +72,10 @@ namespace ComputerClub
                 DGrate.ItemsSource = PC_ClubEntities5.GetContext().Rate.ToList();
             }
         }
+
+        private void BtOtch_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PopularRate());
+        }
     }
 }

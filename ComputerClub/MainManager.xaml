@@ -1,0 +1,35 @@
+﻿<Page x:Class="ComputerClub.MainManager"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ComputerClub"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainManager">
+
+    <Grid Background="AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button  Content="Таблица Компьютеры" Click="BtPC_Click"  Grid.Row="1" Grid.Column="0" />
+        <Button  Content="Таблица Доставка" Click="BtDel_Click"  Grid.Row="1" Grid.Column="1"/>
+        <Button  Content="Таблица Скидки" Click="BtDis_Click"  Grid.Row="1" Grid.Column="2"/>
+        <Button  Content="Таблица Товары" Click="BtPr_Click"  Grid.Row="1" Grid.Column="3"/>
+        <Button  Content="Таблица Отзывы" Click="BtRev_Click"  Grid.Row="1" Grid.Column="4"/>
+        <Button  Content="Таблица Поставщики" Click="BtProv_Click" Grid.Row="2" Grid.Column="0"/>
+        <Button  Content="Таблица Тарифы" Click="BtRa_Click" Grid.Row="2" Grid.Column="1"/>
+        <Button  Content="Таблмца Чеки" Click="BtRe_Click" Grid.Row="2" Grid.Column="2"/>
+        <Button  Content="Таблица Сессии" Click="BtSe_Click" Grid.Row="2" Grid.Column="3"/>
+        <Button  Content="Таблица Пользователи" Click="BtUs_Click" Grid.Row="2" Grid.Column="4"/>
+    </Grid>
+</Page>

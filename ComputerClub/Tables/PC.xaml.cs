@@ -23,7 +23,7 @@ namespace ComputerClub
         public PC()
         {
             InitializeComponent();
-            //DGpc.ItemsSource = PC_ClubEntities4.GetContext().Pc.ToList();
+            //DGpc.ItemsSource = PC_ClubEntities4.GetContext().Pc.ToList()
         }
 
         private void BtDel_Click(object sender, RoutedEventArgs e)
@@ -72,27 +72,5 @@ namespace ComputerClub
         {
             NavigationService.Navigate(new PcAddPage((sender as Button).DataContext as Pc));
         }
-
-        private void UpdateProducts()
-        {
-            var currentProducts = Ent.GetContext().Products.ToList();
-            currentProducts = currentProducts.Where(x =>
-                x.NameOfProduct.ToLower().Contains(SearchProductName.Text.ToLower())).ToList();
-
-            if (SortProductCategory.SelectedIndex == 0)
-                ListProduct.ItemsSource = currentProducts.Where(x =>
-                    x.ProductCategories.NameOfCategory.ToLower().Contains(SortProductCategory.Text.ToLower())).ToList();
-        }
-
-        private void SearchProductName_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            UpdateProducts();
-        }
-
-        private void SortProductCategory_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            UpdateProducts();
-        }
-
     }
 }

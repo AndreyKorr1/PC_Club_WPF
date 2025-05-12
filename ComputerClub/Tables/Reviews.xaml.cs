@@ -33,7 +33,7 @@ namespace ComputerClub
 
         private void BtAdd_Click_1(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new ReviewsAdd());
+            NavigationService.Navigate(new ReviewsAdd(null));
         }
 
         private void BtDel_Click(object sender, RoutedEventArgs e)

@@ -1,0 +1,40 @@
+﻿<Page x:Class="ComputerClub.PCManager"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ComputerClub"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="1000"
+      Title="PC" IsVisibleChanged="Page_IsVisibleChanged">
+
+    <Grid Background="white">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="116*"/>
+            <RowDefinition Height="364*"/>
+            <RowDefinition Height="71*"/>
+        </Grid.RowDefinitions>
+        <DataGrid x:Name="DGpcManager" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" Grid.ColumnSpan="3" Grid.RowSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер комьютера" Binding="{Binding PcID}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Видеокарта" Binding="{Binding Video_Card}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Процессор" Binding="{Binding CPU}" Width="*"></DataGridTextColumn>
+                <DataGridTemplateColumn Width="auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Редактировать" Name="BtEd" Click="BtEd_Click"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Добавить" Grid.Column="0" Grid.Row="1" Name ="BtAdd" Click="BtAdd_Click_1" Margin="0,364,0,0" Grid.RowSpan="2"  />
+        <Button Content="Удалить" Grid.Row="1" Name ="BtDel" Click="BtDel_Click" Grid.ColumnSpan="3" Margin="333,364,333,0" Grid.RowSpan="2" />
+        <Button Content="Назад"  Grid.Column="2" Grid.Row="1" Name ="BtBack" Click="BtBack_Click" Margin="0,364,0,0" Grid.RowSpan="2"/>
+    </Grid>
+</Page>

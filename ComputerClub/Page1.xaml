@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="1200"
       Title="Page1">
 
-    <Grid Style="{StaticResource GridSt}">
+    <Grid Background="AliceBlue">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -21,15 +21,15 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button Style="{StaticResource ButtonSt}" Content="Таблица Компьютеры" Click="BtPC_Click"  Grid.Row="1" Grid.Column="0" />
-        <Button Style="{StaticResource ButtonSt}" Content="Таблица Доставка" Click="BtDel_Click"  Grid.Row="1" Grid.Column="1"/>
-        <Button Style="{StaticResource ButtonSt}" Content="Таблица Скидки" Click="BtDis_Click"  Grid.Row="1" Grid.Column="2"/>
-        <Button Style="{StaticResource ButtonSt}" Content="Таблица Товары" Click="BtPr_Click"  Grid.Row="1" Grid.Column="3"/>
-        <Button Style="{StaticResource ButtonSt}" Content="Таблица Отзывы" Click="BtRev_Click"  Grid.Row="1" Grid.Column="4"/>
-        <Button Style="{StaticResource ButtonSt}" Content="Таблица Поставщики" Click="BtProv_Click" Grid.Row="2" Grid.Column="0"/>
-        <Button Style="{StaticResource ButtonSt}" Content="Таблица Тарифы" Click="BtRa_Click" Grid.Row="2" Grid.Column="1"/>
-        <Button Style="{StaticResource ButtonSt}" Content="Таблмца Чеки" Click="BtRe_Click" Grid.Row="2" Grid.Column="2"/>
-        <Button Style="{StaticResource ButtonSt}" Content="Таблица Сессии" Click="BtSe_Click" Grid.Row="2" Grid.Column="3"/>
-        <Button Style="{StaticResource ButtonSt}" Content="Таблица Пользователи" Click="BtUs_Click" Grid.Row="2" Grid.Column="4"/>
+        <Button  Content="Таблица Компьютеры" Click="BtPC_Click"  Grid.Row="1" Grid.Column="0" />
+        <Button  Content="Таблица Доставка" Click="BtDel_Click"  Grid.Row="1" Grid.Column="1"/>
+        <Button  Content="Таблица Скидки" Click="BtDis_Click"  Grid.Row="1" Grid.Column="2"/>
+        <Button  Content="Таблица Товары" Click="BtPr_Click"  Grid.Row="1" Grid.Column="3"/>
+        <Button  Content="Таблица Отзывы" Click="BtRev_Click"  Grid.Row="1" Grid.Column="4"/>
+        <Button  Content="Таблица Поставщики" Click="BtProv_Click" Grid.Row="2" Grid.Column="0"/>
+        <Button  Content="Таблица Тарифы" Click="BtRa_Click" Grid.Row="2" Grid.Column="1"/>
+        <Button  Content="Таблмца Чеки" Click="BtRe_Click" Grid.Row="2" Grid.Column="2"/>
+        <Button  Content="Таблица Сессии" Click="BtSe_Click" Grid.Row="2" Grid.Column="3"/>
+        <Button  Content="Таблица Пользователи" Click="BtUs_Click" Grid.Row="2" Grid.Column="4"/>
     </Grid>
 </Page>

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\akory\source\repos\ComputerClub\ComputerClub\App.xaml
-2280890237
+45604756773
 2-1161474625
-40-1255821620
+64-1741644114
 182142034315
-DeliverAdd.xaml;Delivers.xaml;DiscountAdd.xaml;ProductAdd.xaml;ProviderAdd.xaml;RatesAdd.xaml;ReviewsAdd.xaml;Styles.xaml;Tables\Discounts.xaml;Enter.xaml;Login.xaml;MainWindow.xaml;Tables\PC.xaml;Page1.xaml;AddPages\PcAddPage.xaml;Tables\Products.xaml;Tables\Providers.xaml;Tables\Rates.xaml;Tables\Receipts.xaml;Tables\Reviews.xaml;Tables\Sessions.xaml;Tables\Users1.xaml;
+AddPages\DeliverAdd.xaml;Buyer\DeliverBuyerAdd.xaml;Buyer\DeliversBuyer.xaml;Buyer\MainBuyer.xaml;Buyer\ProductsBuyer.xaml;Buyer\ProvidersBuyer.xaml;PopularRate.xaml;soldProducts.xaml;StyleDictionary.xaml;Tables\Delivers.xaml;AddPages\DiscountAdd.xaml;AddPages\ProductAdd.xaml;AddPages\ProviderAdd.xaml;AddPages\RatesAdd.xaml;AddPages\ReceiptAdd.xaml;AddPages\ReviewsAdd.xaml;AddPages\SessionAdd.xaml;MainManager.xaml;Manager\DeliversManager.xaml;Manager\PcAddPageManager.xaml;Manager\ReceiptAddManager.xaml;Manager\SessionAddManager.xaml;Manager\DiscountsManager.xaml;Manager\PCManager.xaml;Manager\ProductsManager.xaml;Manager\ProvidersManager.xaml;Manager\RatesManager.xaml;Manager\ReceiptsManager.xaml;Manager\ReviewsManager.xaml;Manager\SessionsManager.xaml;Manager\UsersManager.xaml;Tables\Discounts.xaml;Enter.xaml;Login.xaml;MainWindow.xaml;Tables\PC.xaml;Page1.xaml;AddPages\PcAddPage.xaml;Tables\Products.xaml;Tables\Providers.xaml;Tables\Rates.xaml;Tables\Receipts.xaml;Tables\Reviews.xaml;Tables\Sessions.xaml;Tables\Users1.xaml;
 
 False
 
