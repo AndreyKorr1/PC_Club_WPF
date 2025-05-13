@@ -71,8 +71,8 @@ namespace ComputerClub
                                 select new ProductSalesReport
                                 {
                                     ProductName = productGroup.Key.ProductName,
-                                    QuantitySold = productGroup.Count(), // Количество чеков с этим товаром
-                                    TotalAmount = productGroup.Count() * productGroup.Key.ProductPrice // Сумма продаж
+                                    QuantitySold = productGroup.Count(), 
+                                    TotalAmount = productGroup.Count() * productGroup.Key.ProductPrice 
                                 }).ToList();
 
             return productSales;

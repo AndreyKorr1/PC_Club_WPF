@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Login">
 
-    <Grid Background="white">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="397*"/>
             <ColumnDefinition Width="403*"/>

@@ -68,8 +68,9 @@ namespace ComputerClub
         {
             if (Visibility == Visibility.Visible)
             {
-                PC_ClubEntities5.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
-                DGrate.ItemsSource = PC_ClubEntities5.GetContext().Rate.ToList();
+                var context = new PC_ClubEntities5(); // Или ваш метод GetContext()
+                context.ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                DGrate.ItemsSource = context.Rate.ToList();
             }
         }
 

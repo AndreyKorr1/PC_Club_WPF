@@ -8,7 +8,7 @@
       d:DesignHeight="550" d:DesignWidth="1000"
       Title="PC" IsVisibleChanged="Page_IsVisibleChanged">
 
-    <Grid Background="white">
+    <Grid >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>

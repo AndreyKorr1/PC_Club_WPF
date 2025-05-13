@@ -20,6 +20,6 @@
                 <DataGridTextColumn Header="Сумма" Binding="{Binding TotalAmount}" Width="Auto"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Grid.Row="1" Click="BtBack_Click"></Button>
+        <Button Content="Назад" Grid.Row="1" Click="BtBack_Click"></Button>
     </Grid>
 </Page>
