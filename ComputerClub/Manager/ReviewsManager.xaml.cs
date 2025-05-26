@@ -23,7 +23,7 @@ namespace ComputerClub
         public ReviewsManager()
         {
             InitializeComponent();
-            DGreviewsManager.ItemsSource = PC_ClubEntities5.GetContext().Reviews.ToList();
+           // DGreviewsManager.ItemsSource = PC_ClubEntities5.GetContext().Reviews.ToList();
         }
 
         private void BtBack_Click(object sender, RoutedEventArgs e)

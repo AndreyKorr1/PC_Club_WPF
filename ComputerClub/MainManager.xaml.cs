@@ -74,5 +74,10 @@ namespace ComputerClub
         {
             NavigationService.Navigate(new UsersManager());
         }
+
+        private void BtExit(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Enter());
+        }
     }
 }

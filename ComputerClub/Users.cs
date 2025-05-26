@@ -17,7 +17,7 @@ namespace ComputerClub
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Users()
         {
-            this.Reviews = new HashSet<Reviews>();
+            this.Review = new HashSet<Review>();
             this.Session = new HashSet<Session>();
         }
     
@@ -28,7 +28,7 @@ namespace ComputerClub
         public string Password { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Reviews> Reviews { get; set; }
+        public virtual ICollection<Review> Review { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Session> Session { get; set; }
     }

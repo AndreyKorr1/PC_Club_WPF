@@ -32,5 +32,6 @@
         <Button  Content="Таблмца Чеки" Click="BtRe_Click" Grid.Row="2" Grid.Column="2"/>
         <Button  Content="Таблица Сессии" Click="BtSe_Click" Grid.Row="2" Grid.Column="3"/>
         <Button  Content="Таблица Пользователи" Click="BtUs_Click" Grid.Row="2" Grid.Column="4"/>
+        <Button Content="Выйти" Click="BtExit" Grid.Column="4" Margin="102,5,10,97"></Button>
     </Grid>
 </Page>

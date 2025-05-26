@@ -59,7 +59,7 @@
     <Property Name="DiscountID" Type="numeric" Precision="18" Scale="0" />
     <Property Name="Sum" Type="numeric" Precision="18" Scale="0" />
   </EntityType>
-  <EntityType Name="Reviews">
+  <EntityType Name="Review">
     <Key>
       <PropertyRef Name="ReviewID" />
     </Key>
@@ -169,12 +169,12 @@
   </Association>
   <Association Name="FK_Reviews_Users">
     <End Role="Users" Type="Self.Users" Multiplicity="1" />
-    <End Role="Reviews" Type="Self.Reviews" Multiplicity="*" />
+    <End Role="Review" Type="Self.Review" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Users">
         <PropertyRef Name="UserID" />
       </Principal>
-      <Dependent Role="Reviews">
+      <Dependent Role="Review">
         <PropertyRef Name="UserID" />
       </Dependent>
     </ReferentialConstraint>
@@ -229,7 +229,7 @@
     <EntitySet Name="Provider" EntityType="Self.Provider" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Rate" EntityType="Self.Rate" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Receipt" EntityType="Self.Receipt" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Reviews" EntityType="Self.Reviews" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Review" EntityType="Self.Review" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Session" EntityType="Self.Session" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
@@ -255,7 +255,7 @@
     </AssociationSet>
     <AssociationSet Name="FK_Reviews_Users" Association="Self.FK_Reviews_Users">
       <End Role="Users" EntitySet="Users" />
-      <End Role="Reviews" EntitySet="Reviews" />
+      <End Role="Review" EntitySet="Review" />
     </AssociationSet>
     <AssociationSet Name="FK_Session_Pc" Association="Self.FK_Session_Pc">
       <End Role="Pc" EntitySet="Pc" />

@@ -67,9 +67,9 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Reviews">
-      <EntityTypeMapping TypeName="PC_ClubModel.Reviews">
-        <MappingFragment StoreEntitySet="Reviews">
+    <EntitySetMapping Name="Review">
+      <EntityTypeMapping TypeName="PC_ClubModel.Review">
+        <MappingFragment StoreEntitySet="Review">
           <ScalarProperty Name="ReviewID" ColumnName="ReviewID" />
           <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="Rating" ColumnName="Rating" />

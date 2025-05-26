@@ -51,7 +51,7 @@ namespace ComputerClub
             if (Visibility == Visibility.Visible)
             {
                 PC_ClubEntities5.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
-                DGreviews.ItemsSource = PC_ClubEntities5.GetContext().Reviews.ToList();
+                //DGreviews.ItemsSource = PC_ClubEntities5.GetContext().Reviews.ToList();
             }
         }
     }

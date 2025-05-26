@@ -26,6 +26,11 @@ namespace ComputerClub
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// Функция хеширования пароля
+        /// </summary>
+        /// <param name="password"></param>
+        /// <returns>Метод возвращает хешированый пароль для записи в бд</returns>
         public static string GetHash(string password)
         {
             using (var hash = SHA1.Create())
@@ -39,6 +44,18 @@ namespace ComputerClub
             Auth(LoginText.Text, PasswordText.Password);
         }
 
+        /// <summary>
+        /// Метод для входа пользователя в программу, метод проверет существует ли пользователь вообще и проверяет роль для входа.
+        /// </summary>
+        /// <param name="Login"></param>
+        /// <param name="Password"></param>
+        /// <example>
+        /// Этот метод используется для обработке при нажатии на кнопку
+        /// <code>
+        ///     Auth(LoginText.Text, PasswordText.Password);
+        /// </code>
+        /// </example>
+        /// <returns>Возвращает булевое значение правда или ложь. Проверка есть такой пользователь или нет.</returns>
         public bool Auth(string Login, string Password)
         {
             if (string.IsNullOrEmpty(Login) || string.IsNullOrEmpty(Password))

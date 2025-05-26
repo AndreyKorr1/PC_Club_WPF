@@ -39,5 +39,10 @@ namespace ComputerClub.Buyer
         {
             NavigationService.Navigate(new ProvidersBuyer());
         }
+
+        private void BtExit(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Enter());
+        }
     }
 }

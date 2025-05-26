@@ -33,7 +33,7 @@ namespace ComputerClub
         }
 
         private void BtSaveClick(object sender, RoutedEventArgs e)
-        {
+        {/*
             StringBuilder errors = new StringBuilder();
 
             if (_currentReview.Rating < 0 || _currentReview.Rating > 5) 
@@ -61,7 +61,7 @@ namespace ComputerClub
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString());
-            }
+            }*/
         }
 
         private void BtBackClick(object sender, RoutedEventArgs e)

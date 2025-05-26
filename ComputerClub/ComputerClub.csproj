@@ -94,23 +94,47 @@
     <Compile Include="Buyer\ProvidersBuyer.xaml.cs">
       <DependentUpon>ProvidersBuyer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AddPages\DeliverAdd.xaml.cs">
+      <DependentUpon>DeliverAdd.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Deliver.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="AddPages\DeliverAdd.xaml.cs">
-      <DependentUpon>DeliverAdd.xaml</DependentUpon>
+    <Compile Include="Discount.cs">
+      <DependentUpon>BaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pc.cs">
+      <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="PopularRate.xaml.cs">
       <DependentUpon>PopularRate.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>BaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Provider.cs">
+      <DependentUpon>BaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rate.cs">
+      <DependentUpon>BaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt.cs">
+      <DependentUpon>BaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Review.cs">
+      <DependentUpon>BaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Session.cs">
+      <DependentUpon>BaseModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="soldProducts.xaml.cs">
       <DependentUpon>soldProducts.xaml</DependentUpon>
     </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>BaseModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Tables\Delivers.xaml.cs">
       <DependentUpon>Delivers.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Discount.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="AddPages\DiscountAdd.xaml.cs">
       <DependentUpon>DiscountAdd.xaml</DependentUpon>
@@ -130,47 +154,23 @@
     <Compile Include="Manager\SessionAddManager.xaml.cs">
       <DependentUpon>SessionAddManager.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pc.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Product.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="AddPages\ProductAdd.xaml.cs">
       <DependentUpon>ProductAdd.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Provider.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="AddPages\ProviderAdd.xaml.cs">
       <DependentUpon>ProviderAdd.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Rate.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="AddPages\RatesAdd.xaml.cs">
       <DependentUpon>RatesAdd.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Receipt.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="AddPages\ReceiptAdd.xaml.cs">
       <DependentUpon>ReceiptAdd.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Reviews.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="AddPages\ReviewsAdd.xaml.cs">
       <DependentUpon>ReviewsAdd.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Session.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="AddPages\SessionAdd.xaml.cs">
       <DependentUpon>SessionAdd.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="sysdiagrams.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Manager\DiscountsManager.xaml.cs">
       <DependentUpon>DiscountsManager.xaml</DependentUpon>
@@ -480,6 +480,5 @@
       <LastGenOutput>BaseModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -91,5 +91,9 @@ namespace ComputerClub
             else MessageBox.Show("Укажите логин!");
         }
 
+        private void BtEnter(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Enter());
+        }
     }
 }

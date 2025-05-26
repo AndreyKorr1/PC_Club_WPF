@@ -12,7 +12,7 @@ namespace ComputerClub
     using System;
     using System.Collections.Generic;
     
-    public partial class Reviews
+    public partial class Review
     {
         public decimal ReviewID { get; set; }
         public decimal UserID { get; set; }

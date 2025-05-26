@@ -22,6 +22,7 @@
         <Button Content="Продукты" Click="ProdClick" Grid.Row="1" Grid.Column="0"></Button>
         <Button Content="Доставка" Click="DelivClick" Grid.Row="1" Grid.Column="1"></Button>
         <Button Content="Поставщики" Click="ProvClick" Grid.Row="1" Grid.Column="2"></Button>
+        <Button Content="Выйти" Click="BtExit" Grid.Column="2" Margin="134,5,5,39" ></Button>
 
     </Grid>
 </Page>

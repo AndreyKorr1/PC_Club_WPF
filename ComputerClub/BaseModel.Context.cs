@@ -22,7 +22,6 @@ namespace ComputerClub
             : base("name=PC_ClubEntities5")
         {
         }
-
         public static PC_ClubEntities5 GetContext()
         {
             if (_context == null)
@@ -37,8 +36,8 @@ namespace ComputerClub
             // LINQ запрос для получения популярных тарифов
             var topTariffs = (from check in this.Receipt
                               join session in this.Session on check.SessionID equals session.SessionID // ID сессии в чеке
-                          join tariff in this.Rate on session.RateID equals tariff.RateID   // ID тарифа в сессии
-                          group tariff by tariff.RateName // Группируем по названию тарифа
+                              join tariff in this.Rate on session.RateID equals tariff.RateID   // ID тарифа в сессии
+                              group tariff by tariff.RateName // Группируем по названию тарифа
                               into tariffGroup
                               orderby tariffGroup.Count() descending
                               select new TariffPopularityResult
@@ -71,15 +70,12 @@ namespace ComputerClub
                                 select new ProductSalesReport
                                 {
                                     ProductName = productGroup.Key.ProductName,
-                                    QuantitySold = productGroup.Count(), 
-                                    TotalAmount = productGroup.Count() * productGroup.Key.ProductPrice 
+                                    QuantitySold = productGroup.Count(),
+                                    TotalAmount = productGroup.Count() * productGroup.Key.ProductPrice
                                 }).ToList();
 
             return productSales;
         }
-
-
-
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -93,11 +89,9 @@ namespace ComputerClub
         public virtual DbSet<Provider> Provider { get; set; }
         public virtual DbSet<Rate> Rate { get; set; }
         public virtual DbSet<Receipt> Receipt { get; set; }
-        public virtual DbSet<Reviews> Reviews { get; set; }
+        public virtual DbSet<Review> Review { get; set; }
         public virtual DbSet<Session> Session { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Users> Users { get; set; }
     }
-
-    
 }

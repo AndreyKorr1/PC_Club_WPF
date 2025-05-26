@@ -70,7 +70,7 @@
     <NavigationProperty Name="Product" Relationship="Self.FK_Receipt_Product" FromRole="Receipt" ToRole="Product" />
     <NavigationProperty Name="Session" Relationship="Self.FK_Receipt_Session" FromRole="Receipt" ToRole="Session" />
   </EntityType>
-  <EntityType Name="Reviews">
+  <EntityType Name="Review">
     <Key>
       <PropertyRef Name="ReviewID" />
     </Key>
@@ -78,7 +78,7 @@
     <Property Name="UserID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
     <Property Name="Rating" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
     <Property Name="Message" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Users" Relationship="Self.FK_Reviews_Users" FromRole="Reviews" ToRole="Users" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_Reviews_Users" FromRole="Review" ToRole="Users" />
   </EntityType>
   <EntityType Name="Session">
     <Key>
@@ -112,7 +112,7 @@
     <Property Name="PhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="DateOfBirth" Type="DateTime" Precision="0" />
     <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="Reviews" Relationship="Self.FK_Reviews_Users" FromRole="Users" ToRole="Reviews" />
+    <NavigationProperty Name="Review" Relationship="Self.FK_Reviews_Users" FromRole="Users" ToRole="Review" />
     <NavigationProperty Name="Session" Relationship="Self.FK_Session_Users" FromRole="Users" ToRole="Session" />
   </EntityType>
   <Association Name="FK_Deliver_Product">
@@ -215,12 +215,12 @@
   </Association>
   <Association Name="FK_Reviews_Users">
     <End Role="Users" Type="Self.Users" Multiplicity="1" />
-    <End Role="Reviews" Type="Self.Reviews" Multiplicity="*" />
+    <End Role="Review" Type="Self.Review" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Users">
         <PropertyRef Name="UserID" />
       </Principal>
-      <Dependent Role="Reviews">
+      <Dependent Role="Review">
         <PropertyRef Name="UserID" />
       </Dependent>
     </ReferentialConstraint>
@@ -247,7 +247,7 @@
     <EntitySet Name="Provider" EntityType="Self.Provider" />
     <EntitySet Name="Rate" EntityType="Self.Rate" />
     <EntitySet Name="Receipt" EntityType="Self.Receipt" />
-    <EntitySet Name="Reviews" EntityType="Self.Reviews" />
+    <EntitySet Name="Review" EntityType="Self.Review" />
     <EntitySet Name="Session" EntityType="Self.Session" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
     <EntitySet Name="Users" EntityType="Self.Users" />
@@ -281,7 +281,7 @@
     </AssociationSet>
     <AssociationSet Name="FK_Reviews_Users" Association="Self.FK_Reviews_Users">
       <End Role="Users" EntitySet="Users" />
-      <End Role="Reviews" EntitySet="Reviews" />
+      <End Role="Review" EntitySet="Review" />
     </AssociationSet>
     <AssociationSet Name="FK_Session_Users" Association="Self.FK_Session_Users">
       <End Role="Users" EntitySet="Users" />
